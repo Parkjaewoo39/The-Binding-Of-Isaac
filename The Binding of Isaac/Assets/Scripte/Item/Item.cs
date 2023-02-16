@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject passiveItem;
+
+
     void Start()
     {
         
