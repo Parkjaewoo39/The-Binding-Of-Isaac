@@ -4,12 +4,27 @@ using UnityEngine;
 
 public class Tears : MonoBehaviour
 {
-    private Vector2 direction;
+    private Rigidbody2D tearRigid;
     private Animator IsaacTear = default;
+
+    private Vector2 direction;
+    void Start()
+    {
+        IsaacTear = GetComponent<Animator>();
+        tearRigid = GetComponent<Rigidbody2D>();
+        var tearS = PlayerController.isaacTearSpeed;
+        tearRigid.velocity =transform.forward * tearS;
+    }
+
+    void Update()
+    {
+        transform.Translate(direction);
+    }
+
     public void Shoot(Vector2 direction)
     {
         this.direction = direction;
-        Invoke("DestoryTears", 1.5f);
+        Invoke("DestroyTears", 1.5f);
     }
 
     public void DestroyTears()
@@ -20,21 +35,13 @@ public class Tears : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Wall"||other.tag == "Emeny")
+        if (other.tag == "Wall")
         {
-            IsaacTear.SetTrigger("normalTear");
+            IsaacTear.SetTrigger("Check");
         }
-    }
-    // Start is called before the first frame update
-
-    void Start()
-    {
-        IsaacTear = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (other.tag == "Emeny")
+        {
+            //PlayerController.tearDamage
+        }
     }
 }
