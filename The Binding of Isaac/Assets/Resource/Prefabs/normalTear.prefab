@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6184881802655844849}
   - component: {fileID: 4501208214377591711}
   - component: {fileID: 6802877651223780291}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: normalTear
-  m_TagString: Untagged
+  m_TagString: Tear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8371256012914049347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.06, y: 0.2, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

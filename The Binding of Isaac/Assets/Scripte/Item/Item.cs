@@ -7,7 +7,7 @@ public class Item : MonoBehaviour
     [SerializeField]
     private GameObject passiveItem;
 
-
+   
     void Start()
     {
         

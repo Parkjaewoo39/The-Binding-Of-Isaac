@@ -109,9 +109,10 @@ public class PlayerController : MonoBehaviour
             if (tear != null)
             {
                 
-                //tear.transform.localScale = new Vector3(0.58f, 0.58f, 1.0f);
+                tear.transform.SetParent(tearPoolObj.transform);
+                tear.transform.localScale = new Vector3(1f, 1f, 0f);                
 
-                var direction = new Vector2(1f, 0f);
+                var direction = new Vector2(1.0f, 0f);
                 tear.transform.position = tearPos;
                 tear.Shoot(direction);
             }
@@ -124,6 +125,8 @@ public class PlayerController : MonoBehaviour
             if (tear != null)
             {
                 tear.transform.SetParent(tearPoolObj.transform);
+                tear.transform.localScale = new Vector3(1f, 1f, 0f);
+
 
                 var direction = new Vector2(-1.0f, 0f);
                 tear.transform.position = tearPos;;
@@ -138,6 +141,7 @@ public class PlayerController : MonoBehaviour
             if (tear != null)
             {
                 tear.transform.SetParent(tearPoolObj.transform);
+                tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
                 var direction = new Vector2(0f, 1.0f);
                 tear.transform.position = tearPos;
@@ -151,6 +155,7 @@ public class PlayerController : MonoBehaviour
             if (tear != null)
             {
                 tear.transform.SetParent(tearPoolObj.transform);
+                tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
                 var direction = new Vector2(0f, -1.0f);
                 tear.transform.position = tearPos;
@@ -158,13 +163,6 @@ public class PlayerController : MonoBehaviour
             }
             else { };
         }
-
-
-
-
-
-
-
 
     }
 

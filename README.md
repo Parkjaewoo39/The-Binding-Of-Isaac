@@ -5,7 +5,9 @@ Make a Isaac 3W
 오후 12:00 2023-02-13 / Develop test        
 오후 18:00 2023-02-14 / Isaac Tile & move      
 오후 17:40 2023-02-15 / Isaac Move Animation & Tear        
-오후 17:18 2023-02-16 / Fixed Isaac Tear Pool Parent      
+오후 17:18 2023-02-16 / Fixed Isaac Tear Pool Parent  
+오후 17:40 2023-02-17 / Monster One,Two Add, Find Isaac Tear Problem & BSP R&D           
+
 
 
 =================개발일지 1일차====================
@@ -59,4 +61,12 @@ NullReferenceException: Object reference not set to an instance of an object
 유니티를 다시 켜면 해결이 된다고해서 하니 해결되었다.   
 
 =================개발일지 4일차====================
+
+
+=================개발일지 5일차====================
+랜덤 맵 생성을 위해 BSP(Binary Space Partitioning) R&D 시작
+https://github.com/KwonDeockHo/Random-Dungeon-Generator   
+
+
+=================개발일지 5일차====================
 
