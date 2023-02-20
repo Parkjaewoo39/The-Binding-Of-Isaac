@@ -154,7 +154,9 @@ public class SubRoom : MonoBehaviour
 
         if (GetBottom() != null)
             minimapUpdateSide(GetBottom());
-    }
+
+    }   //minimapUpdate()
+
     public void minimapUpdateSide(Room room)
     {
         for (int i = 0; i < RoomController.Instance.loadedRooms.Count; i++)
@@ -162,7 +164,8 @@ public class SubRoom : MonoBehaviour
             if (room.parent_Position == RoomController.Instance.loadedRooms[i].parent_Position)
                    RoomController.Instance.loadedRooms[i].childRooms.minimapRoom.VisitiedRoom(true, false);
         }
-    }
+    }   //minimapUpdateSide ()
+
     public void RemoveUnconnectedWalls()
     {
         Vector3 tmpCenterPos = transform.parent.gameObject.GetComponent<Room>().parent_Position;
@@ -343,8 +346,10 @@ public class SubRoom : MonoBehaviour
             wallType = wallStr;
         else
             wallType = "None";
-    }
+    }   //RemoveUnconnectedWalls()
 
+
+    //!{ Room Get Distan
     public Room GetRight()
     {
         if (RoomController.Instance.DoesRoomExist(center_Position.x + 1, center_Position.y, center_Position.z))
@@ -377,6 +382,8 @@ public class SubRoom : MonoBehaviour
         }
         return null;
     }
+    //!} Room Get Distan
+
 
     private void OnTriggerEnter(Collider collision)
     {

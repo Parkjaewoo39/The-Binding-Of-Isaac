@@ -6,7 +6,13 @@ Make a Isaac 3W
 오후 18:00 2023-02-14 / Isaac Tile & move      
 오후 17:40 2023-02-15 / Isaac Move Animation & Tear        
 오후 17:18 2023-02-16 / Fixed Isaac Tear Pool Parent  
-오후 17:40 2023-02-17 / Monster One,Two Add, Find Isaac Tear Problem & BSP R&D           
+오후 17:40 2023-02-17 / Monster One,Two Add, Find Isaac Tear Problem & BSP R&D      
+오후 17:40 2023-02-18 / BSP R&D, Debug
+오후 17:40 2023-02-19 / BSP R&D, Debug        
+오후 17:40 2023-02-20 / BSP R&D, Map merge        
+
+
+
 
 
 
@@ -70,9 +76,21 @@ https://github.com/KwonDeockHo/Random-Dungeon-Generator
 
 =================개발일지 5일차====================
 
+
+
 =================개발일지 6일차====================
+  =
+
+
+=================개발일지 6일차===================
+=================개발일지 7일차====================
   
 
 
-=================개발일지 6일차====================
+=================개발일지 7일차====================
 
+=================개발일지 8일차====================
+눈물 수정. Rigidbody의 velocity로 날리는 줄 알았는데 position으로 날아간걸 발견.
+수정 중
+map 로직 후 적용
+=================개발일지 8일차====================

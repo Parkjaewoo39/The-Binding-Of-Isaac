@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DungeonCrawlerController : Singleton<DungeonCrawlerController>
 {
+    // 4방향 방 체크
     public List<Vector3Int> direction4                      = new List<Vector3Int>
     {
         new Vector3Int( 0, 0,  1),       // down
@@ -11,6 +12,8 @@ public class DungeonCrawlerController : Singleton<DungeonCrawlerController>
         new Vector3Int(-1, 0,  0),       // left
         new Vector3Int( 0, 0, -1)        // up
     };
+
+    // 8방향 방 체크
     public List<Vector3Int> direction8                      = new List<Vector3Int>
     {   // Down                           // Up
         new Vector3Int( 0, 0,  1),        new Vector3Int( 0, 0, -1),        
@@ -21,6 +24,7 @@ public class DungeonCrawlerController : Singleton<DungeonCrawlerController>
         // DiwbLeft                       // DownRight
         new Vector3Int(-1, 0,  1),        new Vector3Int( 1, 0,  1)
     };
+    // 방 모양 체크
     public Dictionary<int, List<Vector3Int>> downPatten     = new Dictionary<int, List<Vector3Int>>
     {
         {  0, new List<Vector3Int>      { new Vector3Int(0, 0, 1),   new Vector3Int(-1, 0, 1),   new Vector3Int(0, 0, 2),   new Vector3Int(-1, 0, 2) } }, // ㅁ

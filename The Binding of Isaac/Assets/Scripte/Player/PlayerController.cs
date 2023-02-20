@@ -4,12 +4,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
-    public static float isaacDamage = 3.5f;
-    public static float isaacTearSpeed = 0.1f;
-    public static float isaacRange = 1f;
+    public static PlayerController player;
+
+    public static float isaacHeartHp;
+
+    public static float isaacHeartMaxHp;
+
+    public static float isaacDamage ;
+
+    public static float isaacTearSpeed = 0.5f;
+
+    public static float isaacRange ;
+
     public static float isaacmaxReload;        //최대 연사
+
     public static float isaacReload;      //현재 연사
 
     private float isaacMoveSpeed = 0.5f;   //기본 속도
@@ -20,24 +30,56 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D IsaacRigid;
 
     private Animator IsaacImage = default;
-    //private SpriteRenderer iRenderer;
     private GameObject tearPoolObj;
+    //private SpriteRenderer iRenderer;
+
     public bool isGetKeyCheck = false;
 
     Vector3 lookDirection;
-    // Start is called before the first frame update
+    
+    //!{ Start()
     void Start()
     {
+        if (player == null)
+        {
+            player = this;
+        }
+
         IsaacRigid = gameObject.GetComponent<Rigidbody2D>();
         IsaacImage = gameObject.GetComponent<Animator>();
         //iRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 
         isGetKeyCheck = false;
         tearPoolObj = transform.parent.gameObject.FindChildObj("TearPool");
-    }
-         
 
-    // Update is called once per frame
+        playerStat();
+    }   //Start()
+  
+
+
+    //!{playerStat()
+    private void playerStat()
+    {
+        isaacHeartHp = 6f;  //체력
+
+        isaacHeartMaxHp = 6f;   //최대체력
+            
+        isaacDamage = 3.5f; //데미지
+
+        isaacTearSpeed = 1f;    //눈물 속도
+
+        isaacRange = 1f;    //사거리
+
+        isaacmaxReload = 1f;       //최대 연사
+
+        isaacReload = 2f;      //현재 연사
+
+        isaacMoveSpeed = 0.5f;   //이동 속도
+    }    //!}playerStat()
+
+    
+
+    //!{Update()
     void Update()
     {
         //정지시 이미지
@@ -56,7 +98,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
-            IsaacImage.SetBool("Up", false);            
+            IsaacImage.SetBool("Up", false);
         }
 
         //S키 입력시 이동 및 애니메이션
@@ -100,23 +142,22 @@ public class PlayerController : MonoBehaviour
         //}wasd 이동
 
         //{Arrow키 공격
-        
+
+
+
         Vector2 tearPos = IsaacBody.transform.position;
+              
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            
             var tear = ObjectPool.GetObject();
             if (tear != null)
             {
-                
                 tear.transform.SetParent(tearPoolObj.transform);
-                tear.transform.localScale = new Vector3(1f, 1f, 0f);                
+                tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
-                var direction = new Vector2(1.0f, 0f);
-                tear.transform.position = tearPos;
-                tear.Shoot(direction);
+                tear.transform.position = tearPos;             
             }
-            else { };
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -128,9 +169,9 @@ public class PlayerController : MonoBehaviour
                 tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
 
-                var direction = new Vector2(-1.0f, 0f);
-                tear.transform.position = tearPos;;
-                tear.Shoot(direction);                
+                //var direction = new Vector2(-1.0f, 0f);
+                tear.transform.position = tearPos; ;
+                //tear.Shoot(direction);
             }
             else { };
         }
@@ -143,9 +184,9 @@ public class PlayerController : MonoBehaviour
                 tear.transform.SetParent(tearPoolObj.transform);
                 tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
-                var direction = new Vector2(0f, 1.0f);
+                // var direction = new Vector2(0f, 1.0f);
                 tear.transform.position = tearPos;
-                tear.Shoot(direction);
+                //tear.Shoot(direction);
             }
             else { };
         }
@@ -157,13 +198,42 @@ public class PlayerController : MonoBehaviour
                 tear.transform.SetParent(tearPoolObj.transform);
                 tear.transform.localScale = new Vector3(1f, 1f, 0f);
 
-                var direction = new Vector2(0f, -1.0f);
+                // var direction = new Vector2(0f, -1.0f);
                 tear.transform.position = tearPos;
-                tear.Shoot(direction);
+                // tear.Shoot(direction);
             }
             else { };
         }
 
+    }       //Update()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Door")
+        {
+            FadeInOut.Instance.setFade(true, 1.35f);
+
+            GameObject nextRoom = other.gameObject.transform.parent.GetComponent<Door>().nextRoom;
+            Door nextDoor = other.gameObject.transform.parent.GetComponent<Door>().SideDoor;
+
+            // 진행 방향을 파악 후 캐릭터 위치 지정
+            Vector3 currPos = new Vector3(nextDoor.transform.position.x, 0.5f, nextDoor.transform.position.z) + (nextDoor.transform.localRotation * (Vector3.forward * 3));
+
+            Player.Instance.transform.position = currPos;
+
+            for (int i = 0; i < RoomController.Instance.loadedRooms.Count; i++)
+            {
+                if (nextRoom.GetComponent<Room>().parent_Position == RoomController.Instance.loadedRooms[i].parent_Position)
+                {
+                    RoomController.Instance.loadedRooms[i].childRooms.gameObject.SetActive(true);
+                }
+                else
+                {
+                    RoomController.Instance.loadedRooms[i].childRooms.gameObject.SetActive(false);
+                }
+            }
+
+            FadeInOut.Instance.setFade(false, 0.15f);
+        }
     }
 
 
