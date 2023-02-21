@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Item : MonoBehaviour
@@ -7,7 +8,9 @@ public class Item : MonoBehaviour
     [SerializeField]
     private GameObject passiveItem;
 
-   
+    protected int power;
+
+
     void Start()
     {
         
@@ -18,4 +21,14 @@ public class Item : MonoBehaviour
     {
         
     }
+}
+
+
+class Tearss : Item
+{
+    public Tearss() 
+    { 
+
+    }    
+
 }

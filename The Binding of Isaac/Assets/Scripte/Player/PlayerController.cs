@@ -12,17 +12,17 @@ public class PlayerController : Singleton<PlayerController>
 
     public static float isaacHeartMaxHp;
 
-    public static float isaacDamage ;
+    public static float isaacDamage;
 
-    public static float isaacTearSpeed = 0.5f;
+    public static float isaacTearSpeed;
 
-    public static float isaacRange ;
+    public static float isaacRange;
 
-    public static float isaacmaxReload;        //최대 연사
-
+    public static float isaacMaxReload;        //최대 연사
+                                               //
     public static float isaacReload;      //현재 연사
-
-    private float isaacMoveSpeed = 0.5f;   //기본 속도
+                                          //
+    private static float isaacMoveSpeed = 0.5f;   //기본 속도
 
     public GameObject IsaacBody = default;
     public GameObject IsaacHead = default;
@@ -36,7 +36,28 @@ public class PlayerController : Singleton<PlayerController>
     public bool isGetKeyCheck = false;
 
     Vector3 lookDirection;
-    
+    Vector2 direction;
+
+    //!{playerStat()
+    public void playerStat()
+    {
+        isaacHeartHp = 6f;  //체력
+
+        isaacHeartMaxHp = 6f;   //최대체력
+
+        isaacDamage = 3.5f; //데미지
+
+        isaacTearSpeed = 2.5f;    //눈물 속도
+
+        isaacRange = 1f;    //사거리
+
+        isaacMaxReload = 1f;       //최대 연사
+
+        isaacReload = 2f;      //현재 연사
+
+        isaacMoveSpeed = 0.5f;   //이동 속도
+    }    //!}playerStat()
+
     //!{ Start()
     void Start()
     {
@@ -53,31 +74,52 @@ public class PlayerController : Singleton<PlayerController>
         tearPoolObj = transform.parent.gameObject.FindChildObj("TearPool");
 
         playerStat();
+
+        // PlayerPrefs.SetFloat("isaacTearSpeedVal", isaacTearSpeed);
     }   //Start()
-  
 
 
-    //!{playerStat()
-    private void playerStat()
+    #region
+    ////!{playerStat()
+    //public static void playerStat(
+    //    float hp, float hpMax, float damage, float tearSpeed,
+    //    float range, float maxRate, float rate, float moveSpeed)
+    //{
+    //    isaacHeartHp = 6f+ hp;  //체력
+
+    //    isaacHeartMaxHp = 6f+ hpMax;   //최대체력
+
+    //    isaacDamage = 3.5f+ damage; //데미지
+
+    //    isaacTearSpeed = 2.5f + tearSpeed;    //눈물 속도
+
+    //    isaacRange = 1f +range;    //사거리
+
+    //    isaacMaxReload = 1f + maxRate;       //최대 연사
+
+    //    isaacReload = 2f + rate;      //현재 연사
+
+    //    isaacMoveSpeed = 0.5f + moveSpeed;   //이동 속도
+    //}    //!}playerStat()
+    #endregion
+
+
+    //!{Shoot R&D
+    public void Shoot(Vector3 direction)
     {
-        isaacHeartHp = 6f;  //체력
+        Vector2 tearPos = IsaacBody.transform.position;
 
-        isaacHeartMaxHp = 6f;   //최대체력
-            
-        isaacDamage = 3.5f; //데미지
-
-        isaacTearSpeed = 1f;    //눈물 속도
-
-        isaacRange = 1f;    //사거리
-
-        isaacmaxReload = 1f;       //최대 연사
-
-        isaacReload = 2f;      //현재 연사
-
-        isaacMoveSpeed = 0.5f;   //이동 속도
-    }    //!}playerStat()
-
-    
+        var tear = ObjectPool.GetObject();
+        if (tear != null)
+        {
+            tear.transform.SetParent(tearPoolObj.transform);
+            tear.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            tear.transform.position = tearPos;
+            //tear.transform.localRotation = Quaternion.Euler(0.0f, 0f, -90f);
+            tear.transform.eulerAngles = direction * 1;
+        }
+        //this.direction = direction;        
+    }   //!}Shoot R&D
 
     //!{Update()
     void Update()
@@ -141,68 +183,31 @@ public class PlayerController : Singleton<PlayerController>
 
         //}wasd 이동
 
+
         //{Arrow키 공격
-
-
-
-        Vector2 tearPos = IsaacBody.transform.position;
-              
-
+        //Vector2 tearPos = IsaacBody.transform.position;
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            var tear = ObjectPool.GetObject();
-            if (tear != null)
-            {
-                tear.transform.SetParent(tearPoolObj.transform);
-                tear.transform.localScale = new Vector3(1f, 1f, 0f);
-
-                tear.transform.position = tearPos;             
-            }
+            Vector3 right = new Vector3(0, 0, -90f);
+            Shoot(right);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            var tear = ObjectPool.GetObject();
-            if (tear != null)
-            {
-                tear.transform.SetParent(tearPoolObj.transform);
-                tear.transform.localScale = new Vector3(1f, 1f, 0f);
-
-
-                //var direction = new Vector2(-1.0f, 0f);
-                tear.transform.position = tearPos; ;
-                //tear.Shoot(direction);
-            }
-            else { };
+            Vector3 left = new Vector3(0, 0, 90f);
+            Shoot(left);
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            var tear = ObjectPool.GetObject();
-            if (tear != null)
-            {
-                tear.transform.SetParent(tearPoolObj.transform);
-                tear.transform.localScale = new Vector3(1f, 1f, 0f);
-
-                // var direction = new Vector2(0f, 1.0f);
-                tear.transform.position = tearPos;
-                //tear.Shoot(direction);
-            }
-            else { };
+            Vector3 up = new Vector3(0, 0, 0f);
+            Shoot(up);
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            var tear = ObjectPool.GetObject();
-            if (tear != null)
-            {
-                tear.transform.SetParent(tearPoolObj.transform);
-                tear.transform.localScale = new Vector3(1f, 1f, 0f);
+            Vector3 down = new Vector3(0, 0, -180f);
+            Shoot(down);
 
-                // var direction = new Vector2(0f, -1.0f);
-                tear.transform.position = tearPos;
-                // tear.Shoot(direction);
-            }
-            else { };
         }
 
     }       //Update()

@@ -157,3 +157,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0a6420c04fb2d428d32eccd0e7a19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tearRigid: {fileID: 0}
+  tearSpeed: 1

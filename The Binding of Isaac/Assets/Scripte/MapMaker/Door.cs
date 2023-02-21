@@ -14,8 +14,6 @@ public class Door : MonoBehaviour
     public Transform doorPos;
     public bool isUpdate = false;
 
-
-
     public void setNextRoom(GameObject _nextRoom)
     {
         nextRoom = _nextRoom;

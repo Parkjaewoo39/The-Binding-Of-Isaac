@@ -11,48 +11,47 @@ public class Tears : MonoBehaviour
 
     private Vector2 direction;
 
-    float tearDamage = PlayerController.isaacDamage;
+    private float tearSpeed = default;
 
-    float tearReload = PlayerController.isaacReload;
+    private float isaacNowTearSpeed = default;
 
-    float tearRate = PlayerController.isaacmaxReload;
+    private bool isSomethingCheck = false;
 
-    float tearSpeed = PlayerController.isaacTearSpeed;
-
+    private void Awake()
+    {
+        GameObject.Find("Body").GetComponent<PlayerController>().playerStat();
+    }
     void Start()
     {
-        IsaacTear = gameObject.GetComponent<Animator>();
+        // PlayerController.isaacTearSpeed += 0f;
+
+        IsaacTear = GetComponent<Animator>();
         tearRigid = GetComponent<Rigidbody2D>();
-       
-       // tearRigid.AddForce(transform.forward * tearSpeed);
 
-        tearDamage = PlayerController.isaacDamage;
-        var tearS = PlayerController.isaacTearSpeed;
-
-        tearReload = 0f;
-        //tearRigid.velocity =transform.forward * tearS;
+        UpdateTearSpeed();
+        isSomethingCheck = false;
     }
 
     void Update()
     {
-        Vector3 dircetion = Vector3.up;
-        
-        transform.Translate(direction);
-        //tearRigid.velocity = transform.forward * PlayerController.isaacTearSpeed;
-
-        if (0 < tearReload)
+        //Debug.Log($"{tearSpeed}");
+        //tearRigid.velocity = new Vector2(50 , 0 * tearSpeed) ;
+        //tearRigid.velocity = transform.up * tearSpeed;
+        //Debug.Log($"{isaacNowTearSpeed}");
+        if (!isSomethingCheck)
         {
-            tearReload -= Time.deltaTime;
+            tearRigid.velocity = transform.up * isaacNowTearSpeed * 20;
         }
+
+
+        //Vector2 dircetion = Vector2.up;
+
+        //transform.Translate(direction);
+
+        //tearRigid.velocity = transform.forward * PlayerController.isaacTearSpeed;
     }
 
-    public void Shoot(Vector2 direction)
-    {
-        //tearRigid.velocity = PlayerController.isaacTearSpeed * direction;
-        //tearRigid.AddForce(transform.forward * tearSpeed);
-        this.direction = direction;
-        //Invoke("DestroyTears", 1.5f);
-    }
+
 
     public void DestroyTears()
     {
@@ -62,26 +61,38 @@ public class Tears : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        isSomethingCheck= true;
+        tearRigid.velocity = Vector3.zero;
+
         if (other.tag == "Wall")
         {
-            IsaacTear.SetBool("Wall", true);
+            tearRigid.velocity = Vector2.zero;
+            IsaacTear.SetBool("Something", true);
+            // DestroyTears();
+            //StartCoroutine("TearDestroy");
         }
         if (other.tag == "Enemy")
-        {           
-            tearRigid.velocity = Vector2.zero;            
-            IsaacTear.SetBool("Enemy", true);
-            DestroyTears();
-
-
+        {
+            tearRigid.velocity = Vector2.zero;
+            IsaacTear.SetBool("Something", true);
+            // DestroyTears();
             //PlayerController.tearDamage
         }
-       
+        if (other.tag == "TearShadow")
+        {
+            IsaacTear.SetBool("Something", true);
+            DestroyTears();
+        }
+
     }
 
-    public void Attack()
+    public void UpdateTearSpeed()
     {
-
+        // isaacNowTearSpeed = PlayerPrefs.GetFloat("isaacTearSpeedVal");
+        isaacNowTearSpeed += PlayerController.isaacTearSpeed;
     }
-
-
+    //IEnumerator TearDestroyAnimation(string name, float ratio, bool play)
+    //{
+    //    var ani = animation["normalTear"];
+    //}
 }

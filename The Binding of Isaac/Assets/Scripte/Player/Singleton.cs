@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
-// Singleton Templete class
-// e.g. public class MyClassName : Singleton<MyClassName> {}
-// protected MyClassname() {} 을 선언해서 비 싱글톤 생성자 사용을 방지할 것
+
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
+    // Singleton Templete class
+    // e.g. public class MyClassName : Singleton<MyClassName> {}
+    // protected MyClassname() {} 을 선언해서 비 싱글톤 생성자 사용을 방지할 것
     // Destroy 여부 확인용
     private static bool _ShuttingDown = false;
     private static object _Lock = new object();
@@ -13,8 +14,8 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         get
         {
-            // 게임 종료 시 Object 보다 싱글톤의 OnDestroy 가 먼저 실행 될 수도 있다. 
-            // 해당 싱글톤을 gameObject.Ondestory() 에서는 사용하지 않거나 사용한다면 null 체크를 해주자
+            // 게임 종료 시 Object 보다 싱글톤의 OnDestroy 가 먼저 실행 될 수도 있음. 
+            // 싱글톤을 gameObject.Ondestory() 에서는 사용하지 않거나 사용한다면 null 체크
             if (_ShuttingDown)
             {
                 Debug.Log("[Singleton] Instance '" + typeof(T) + "' already destroyed. Returning null.");
