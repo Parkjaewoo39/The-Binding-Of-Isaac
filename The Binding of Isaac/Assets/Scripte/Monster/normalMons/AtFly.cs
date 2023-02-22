@@ -6,13 +6,13 @@ using static UnityEngine.GraphicsBuffer;
 
 public class AtFly : MonoBehaviour
 {
-    private Animator noAtFlyAni = default;
-    private Rigidbody2D noAtFlyRigid = default;
+    private Animator AtFlyAni = default;
+    private Rigidbody2D AtFlyRigid = default;
 
     public Transform target;
 
-    private float noAtFlyHp = 3f;
-    public static float noAtFlySpeed = 1f;
+    private float AtFlyHp = 3f;
+    public static float AtFlySpeed = 10f;
 
     private bool isTargetCheck = false;
     Vector2 vec;
@@ -20,8 +20,8 @@ public class AtFly : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(true);
-        noAtFlyAni = gameObject.GetComponentMust<Animator>();
-        noAtFlyRigid = gameObject.GetComponentMust<Rigidbody2D>();
+        AtFlyAni = gameObject.GetComponentMust<Animator>();
+        AtFlyRigid = gameObject.GetComponentMust<Rigidbody2D>();
         target = FindObjectOfType<PlayerController>().transform;
         
         StartCoroutine("mobMove");
@@ -30,7 +30,7 @@ public class AtFly : MonoBehaviour
     //FixedUpdate()
     void FixedUpdate()
     {
-        noAtFlyRigid.velocity = new Vector2(noAtFlySpeed, noAtFlySpeed);
+        AtFlyRigid.velocity = new Vector2(AtFlySpeed, AtFlySpeed);
 
         //
         MoveCharacter(vec);
@@ -39,7 +39,7 @@ public class AtFly : MonoBehaviour
     //
     private void MoveCharacter(Vector2 direction)
     {
-        noAtFlyRigid.MovePosition((Vector2)transform.position + (direction * noAtFlySpeed * Time.deltaTime));
+        AtFlyRigid.MovePosition((Vector2)transform.position + (direction * AtFlySpeed * Time.deltaTime));
     }
     void Update()
     {
@@ -72,7 +72,7 @@ public class AtFly : MonoBehaviour
         if (other.tag == "Tear")
         {
             Hit();
-            Debug.Log($"{noAtFlyHp}");
+            //Debug.Log($"{noAtFlyHp}");
         }
     }
     public void OnTriggerStay2D(Collider2D other)
@@ -88,13 +88,13 @@ public class AtFly : MonoBehaviour
     //!{Hit()
     public void Hit()
     {
-        noAtFlyHp -= PlayerController.isaacDamage;
+        AtFlyHp -= PlayerController.isaacDamage;
 
-        if (0 < noAtFlyHp)
+        if (0 < AtFlyHp)
         {
 
         }
-        if (noAtFlyHp <= 0)
+        if (AtFlyHp <= 0)
         {
             Die();
         }
@@ -104,7 +104,7 @@ public class AtFly : MonoBehaviour
     //!{Die()
     public void Die()
     {
-        noAtFlyAni.SetBool("Die", true);
+        AtFlyAni.SetBool("Die", true);
         Invoke("DestroyMob", 0.3f);
 
 
@@ -126,7 +126,7 @@ public class AtFly : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, target.position) > 1 && isTargetCheck)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, noAtFlySpeed);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, AtFlySpeed);
         }
     }
 

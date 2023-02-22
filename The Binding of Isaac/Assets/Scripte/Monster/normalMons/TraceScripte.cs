@@ -18,7 +18,7 @@ public class TraceScripte : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
            // transform.parent.GetComponent<NoAtFly>().
-            transform.parent.GetComponent<NoAtFly>().startMove();
+            transform.parent.GetComponent<AtFly>().startMove();
         }
     }
 }

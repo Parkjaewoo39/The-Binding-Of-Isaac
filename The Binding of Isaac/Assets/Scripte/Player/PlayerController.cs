@@ -242,6 +242,7 @@ public class PlayerController : Singleton<PlayerController>
 
             FadeInOut.Instance.setFade(false, 0.15f);
         }
+        
     }
 
 
