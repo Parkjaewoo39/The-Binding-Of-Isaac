@@ -7,15 +7,16 @@ public class Tears : MonoBehaviour
 
     private Rigidbody2D tearRigid;
 
-    private Animator IsaacTear = default;
+    private Animator isaacTear = default;
 
-    private Vector2 direction;
+    private Collider2D isaacCollider2D = default;
 
     private float tearSpeed = default;
 
     private float isaacNowTearSpeed = default;
 
     private bool isSomethingCheck = false;
+
 
     private void Awake()
     {
@@ -25,7 +26,7 @@ public class Tears : MonoBehaviour
     {
         // PlayerController.isaacTearSpeed += 0f;
 
-        IsaacTear = GetComponent<Animator>();
+        isaacTear = GetComponent<Animator>();
         tearRigid = GetComponent<Rigidbody2D>();
 
         UpdateTearSpeed();
@@ -33,26 +34,16 @@ public class Tears : MonoBehaviour
     }
 
     void Update()
-    {
-        //Debug.Log($"{tearSpeed}");
-        //tearRigid.velocity = new Vector2(50 , 0 * tearSpeed) ;
-        //tearRigid.velocity = transform.up * tearSpeed;
-        //Debug.Log($"{isaacNowTearSpeed}");
+    {    
         if (!isSomethingCheck)
         {
             tearRigid.velocity = transform.up * isaacNowTearSpeed * 20;
         }
 
-
-        //Vector2 dircetion = Vector2.up;
-
-        //transform.Translate(direction);
-
-        //tearRigid.velocity = transform.forward * PlayerController.isaacTearSpeed;
     }
 
-
-
+    //!{Shoot R&D
+    
     public void DestroyTears()
     {
         ObjectPool.ReturnObject(this);
@@ -67,24 +58,29 @@ public class Tears : MonoBehaviour
         if (other.tag == "Wall")
         {
             tearRigid.velocity = Vector2.zero;
-            IsaacTear.SetBool("Something", true);
+            isaacTear.SetBool("Something", true);
+            Invoke("DestroyTears", 0.3f);
+            
             // DestroyTears();
             //StartCoroutine("TearDestroy");
         }
         if (other.tag == "Enemy")
         {
             tearRigid.velocity = Vector2.zero;
-            IsaacTear.SetBool("Something", true);
+            isaacTear.SetBool("Something", true);
+            Invoke("DestroyTears", 0.3f);   
             // DestroyTears();
             //PlayerController.tearDamage
         }
         if (other.tag == "TearShadow")
         {
-            IsaacTear.SetBool("Something", true);
+            isaacTear.SetBool("Something", true);
+            Invoke("DestroyTears", 0.3f);
+
             DestroyTears();
         }
 
-    }
+    }   
 
     public void UpdateTearSpeed()
     {

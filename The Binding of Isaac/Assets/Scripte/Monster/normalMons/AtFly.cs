@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class NoAtFly : MonoBehaviour
+public class AtFly : MonoBehaviour
 {
     private Animator noAtFlyAni = default;
     private Rigidbody2D noAtFlyRigid = default;
@@ -56,7 +56,7 @@ public class NoAtFly : MonoBehaviour
     
     IEnumerator mobMove()
     {
-        noAtFlySpeed = Random.Range(-1, 5);
+       // noAtFlySpeed = Random.Range(-1, 5);
         yield return new WaitForSeconds(0.3f);
         StartCoroutine("mobMove");
     }

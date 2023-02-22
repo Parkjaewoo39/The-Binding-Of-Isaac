@@ -3,32 +3,24 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Item 
 {
-    [SerializeField]
-    private GameObject passiveItem;
+    protected string itemName = default;
+   
+    protected float damage = default;
+    protected float speed = default; 
 
-    protected int power;
-
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
 
 
-class Tearss : Item
+class WoodenSpoon : Item
 {
-    public Tearss() 
-    { 
+    public  WoodenSpoon() 
+    {
 
-    }    
-
+        this.itemName = "¿ìµå ½ºÇ¬";
+        this.damage = 0f;
+        this.speed= 5f;
+    } 
+        
 }

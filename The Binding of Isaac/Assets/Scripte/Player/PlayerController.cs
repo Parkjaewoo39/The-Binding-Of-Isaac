@@ -113,7 +113,7 @@ public class PlayerController : Singleton<PlayerController>
         if (tear != null)
         {
             tear.transform.SetParent(tearPoolObj.transform);
-            tear.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            tear.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             tear.transform.position = tearPos;
             //tear.transform.localRotation = Quaternion.Euler(0.0f, 0f, -90f);
             tear.transform.eulerAngles = direction * 1;
@@ -124,6 +124,7 @@ public class PlayerController : Singleton<PlayerController>
     //!{Update()
     void Update()
     {
+        
         //정지시 이미지
         if (!Input.anyKey)
         {
@@ -134,13 +135,14 @@ public class PlayerController : Singleton<PlayerController>
 
         //W키 입력시 이동 및 애니메이션
         if (Input.GetKey(KeyCode.W))
-        {
+        {            
             IsaacImage.SetBool("Up", true);
-            IsaacRigid.AddForce(Vector2.up * isaacMoveSpeed, ForceMode2D.Impulse);
+            IsaacRigid.AddForce(Vector2.up * isaacMoveSpeed, ForceMode2D.Impulse);            
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
             IsaacImage.SetBool("Up", false);
+           
         }
 
         //S키 입력시 이동 및 애니메이션
@@ -164,7 +166,8 @@ public class PlayerController : Singleton<PlayerController>
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            IsaacImage.SetBool("Right", false);
+            IsaacImage.SetBool("Right", false);           
+
         }
 
         //A키 입력시 이동 및 애니메이션
