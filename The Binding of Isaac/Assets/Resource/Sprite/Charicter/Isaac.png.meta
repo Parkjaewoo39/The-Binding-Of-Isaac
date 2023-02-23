@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -11097,11 +11097,11 @@ TextureImporter:
       Isaac_188: 390937929
       Isaac_299: 1789419567
       Isaac_469: 265602525
+      Isaac_447: -459911218
       Isaac_3: -1545160311
       Isaac_351: 1192439105
       Isaac_230: -1909141899
       Isaac_22: 71875109
-      Isaac_447: -459911218
       Isaac_25: 1406018307
       Isaac_65: 1468422212
       Isaac_334: 1368899275
@@ -11156,9 +11156,9 @@ TextureImporter:
       Isaac_273: -197203576
       Isaac_184: -1192441088
       Isaac_520: 1074266067
-      Isaac_152: -1951311333
-      Isaac_512: 1085593862
       Isaac_410: -794657405
+      Isaac_512: 1085593862
+      Isaac_152: -1951311333
       Isaac_248: -1568553158
       Isaac_508: 1478644058
       Isaac_13: -353682664
@@ -11205,8 +11205,8 @@ TextureImporter:
       Isaac_177: 1913657901
       Isaac_29: 1824283417
       Isaac_246: 372264902
-      Isaac_313: 242570060
       Isaac_355: 161841160
+      Isaac_313: 242570060
       Isaac_320: 944741649
       Isaac_77: 1264922764
       Isaac_122: 353655337
@@ -11327,15 +11327,16 @@ TextureImporter:
       Isaac_108: 126353585
       Isaac_507: -212122638
       Isaac_198: -661205572
-      Isaac_360: -1139045614
+      Isaac_506: 1523403023
       Isaac_468: 669268727
       Isaac_132: 289745462
       Isaac_294: -1088786713
+      Isaac_360: -1139045614
       Isaac_297: 1233596550
       Isaac_301: -1443550032
       Isaac_62: -566486684
-      Isaac_285: -1677762184
       Isaac_428: 845579811
+      Isaac_285: -1677762184
       Isaac_16: -1198642158
       Isaac_166: -22709068
       Isaac_5: 163912932
@@ -11377,7 +11378,6 @@ TextureImporter:
       Isaac_204: 1331117064
       Isaac_261: -678239615
       Isaac_60: 786678619
-      Isaac_506: 1523403023
       Isaac_253: 1549957967
       Isaac_14: -2090784686
       Isaac_415: -828443827

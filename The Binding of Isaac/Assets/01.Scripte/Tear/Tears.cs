@@ -35,11 +35,10 @@ public class Tears : MonoBehaviour
 
     void Update()
     {    
-        if (!isSomethingCheck)
-        {
+        if (!isSomethingCheck )
+        {            
             tearRigid.velocity = transform.up * isaacNowTearSpeed * 20;
         }
-
     }
 
     //!{Shoot R&D
@@ -84,11 +83,8 @@ public class Tears : MonoBehaviour
 
     public void UpdateTearSpeed()
     {
-        // isaacNowTearSpeed = PlayerPrefs.GetFloat("isaacTearSpeedVal");
+       
         isaacNowTearSpeed += PlayerController.isaacTearSpeed;
     }
-    //IEnumerator TearDestroyAnimation(string name, float ratio, bool play)
-    //{
-    //    var ani = animation["normalTear"];
-    //}
+    
 }

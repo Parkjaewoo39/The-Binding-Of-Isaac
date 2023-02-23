@@ -10,6 +10,8 @@ TagManager:
   - Room
   - Minimap
   - Door
+  - Boss
+  - BossTear
   layers:
   - Default
   - TransparentFX

@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8919065462936338554}
   - component: {fileID: 8919065462936338548}
-  - component: {fileID: 8919065462936338555}
   - component: {fileID: 8919065462936338549}
-  - component: {fileID: 8919065462936338550}
+  - component: {fileID: 2085150733}
   m_Layer: 8
   m_Name: TraceCollider
   m_TagString: Untagged
@@ -61,18 +60,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 3}
   m_EdgeRadius: 0
---- !u!114 &8919065462936338555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8919065462936338553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c14a4bb3e5e2d3043b1a151e6238fdac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &8919065462936338549
 Rigidbody2D:
   serializedVersion: 4
@@ -94,7 +81,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8919065462936338550
+--- !u!114 &2085150733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +90,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8919065462936338553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c14a4bb3e5e2d3043b1a151e6238fdac, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b3a3db01ed4d6c4194099fb824143b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8919065463170385740
@@ -245,9 +232,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8919065463811197679}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.01, y: 0.030000003, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 32, y: 32, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8919065463170385741}
@@ -265,7 +252,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.04}

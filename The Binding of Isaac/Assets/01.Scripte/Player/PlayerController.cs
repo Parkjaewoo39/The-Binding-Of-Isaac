@@ -21,8 +21,12 @@ public class PlayerController : Singleton<PlayerController>
     public static float isaacMaxReload;        //최대 연사
                                                //
     public static float isaacReload;      //현재 연사
-                                          //
+
+    public static float isaacTearHigh;
+
     private static float isaacMoveSpeed = 0.5f;   //기본 속도
+
+
 
     public GameObject IsaacBody = default;
     public GameObject IsaacHead = default;
@@ -47,13 +51,16 @@ public class PlayerController : Singleton<PlayerController>
 
         isaacDamage = 3.5f; //데미지
 
-        isaacTearSpeed = 2.5f;    //눈물 속도
+        isaacTearSpeed = 5f;    //눈물 속도
 
         isaacRange = 1f;    //사거리
 
         isaacMaxReload = 1f;       //최대 연사
 
         isaacReload = 2f;      //현재 연사
+
+        isaacTearHigh = 3f;
+
 
         isaacMoveSpeed = 0.5f;   //이동 속도
     }    //!}playerStat()
@@ -77,7 +84,6 @@ public class PlayerController : Singleton<PlayerController>
 
         // PlayerPrefs.SetFloat("isaacTearSpeedVal", isaacTearSpeed);
     }   //Start()
-
 
     #region
     ////!{playerStat()
@@ -113,8 +119,8 @@ public class PlayerController : Singleton<PlayerController>
         if (tear != null)
         {
             tear.transform.SetParent(tearPoolObj.transform);
-            tear.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-            tear.transform.position = tearPos;
+            tear.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            tear.transform.position = new Vector2(tearPos.x,tearPos.y+5f);
             //tear.transform.localRotation = Quaternion.Euler(0.0f, 0f, -90f);
             tear.transform.eulerAngles = direction * 1;
         }
@@ -124,7 +130,7 @@ public class PlayerController : Singleton<PlayerController>
     //!{Update()
     void Update()
     {
-        
+
         //정지시 이미지
         if (!Input.anyKey)
         {
@@ -135,14 +141,14 @@ public class PlayerController : Singleton<PlayerController>
 
         //W키 입력시 이동 및 애니메이션
         if (Input.GetKey(KeyCode.W))
-        {            
+        {
             IsaacImage.SetBool("Up", true);
-            IsaacRigid.AddForce(Vector2.up * isaacMoveSpeed, ForceMode2D.Impulse);            
+            IsaacRigid.AddForce(Vector2.up * isaacMoveSpeed, ForceMode2D.Impulse);
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
             IsaacImage.SetBool("Up", false);
-           
+
         }
 
         //S키 입력시 이동 및 애니메이션
@@ -166,7 +172,7 @@ public class PlayerController : Singleton<PlayerController>
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            IsaacImage.SetBool("Right", false);           
+            IsaacImage.SetBool("Right", false);
 
         }
 
@@ -242,7 +248,7 @@ public class PlayerController : Singleton<PlayerController>
 
             FadeInOut.Instance.setFade(false, 0.15f);
         }
-        
+
     }
 
 
