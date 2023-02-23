@@ -13,6 +13,8 @@ Make a Isaac 3W
 오후 17:40 2023-02-21 / BSP R&D, Tear   
 오후 17:40 2023-02-22 / Mob AI, 
 오후 17:40 2023-02-23 / Boss BabyPlum 
+오후 20:40 2023-02-23 / Boss BabyPlum 
+
 
 
 

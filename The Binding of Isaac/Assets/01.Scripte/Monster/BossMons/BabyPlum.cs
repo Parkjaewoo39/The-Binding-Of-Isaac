@@ -11,7 +11,7 @@ public class BabyPlum : MonoBehaviour
 
     public Transform target;
 
-    private float babyPlumHp = 3f;
+    private float babyPlumHp = 35f;
     public static float babyPlumSpeed = 10f;
 
     private bool isTargetCheck = false;
@@ -41,6 +41,7 @@ public class BabyPlum : MonoBehaviour
     {
         babyPlumRigid.MovePosition((Vector2)transform.position + (direction * babyPlumSpeed * Time.deltaTime));
     }
+
     void Update()
     {
        // noAtFlyRigid.transform.LookAt(target);
@@ -51,9 +52,7 @@ public class BabyPlum : MonoBehaviour
         direction.Normalize();
         vec = direction;
     }
-
-
-    
+        
     IEnumerator mobMove()
     {
        // noAtFlySpeed = Random.Range(-1, 5);
@@ -83,12 +82,12 @@ public class BabyPlum : MonoBehaviour
         }
     }
 
-
-
     //!{Hit()
     public void Hit()
     {
+        //Debug.Log(PlayerController.isaacDamage);
         babyPlumHp -= PlayerController.isaacDamage;
+       // Debug.Log(babyPlumHp);
 
         if (0 < babyPlumHp)
         {
@@ -105,10 +104,7 @@ public class BabyPlum : MonoBehaviour
     public void Die()
     {
         babyPlumAni.SetBool("Die", true);
-        Invoke("DestroyMob", 0.3f);
-
-
-        
+        Invoke("DestroyMob", 0.3f);        
     }   //Did()
 
     //private void Distroy()
@@ -129,6 +125,8 @@ public class BabyPlum : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, babyPlumSpeed);
         }
     }
+
+    
 
 
 
