@@ -67,7 +67,8 @@ public class Tears : MonoBehaviour
         {
             tearRigid.velocity = Vector2.zero;
             isaacTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);   
+            Invoke("DestroyTears", 0.3f);
+            Debug.Log("??");
             // DestroyTears();
             //PlayerController.tearDamage
         }

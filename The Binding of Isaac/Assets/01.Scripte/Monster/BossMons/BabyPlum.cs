@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+
 public class BabyPlum : MonoBehaviour
 {
     private Animator babyPlumAni = default;
@@ -17,12 +18,17 @@ public class BabyPlum : MonoBehaviour
     private bool isTargetCheck = false;
     Vector2 vec;
 
-    void Start()
+    private void Awake()
     {
-        gameObject.SetActive(true);
         babyPlumAni = gameObject.GetComponentMust<Animator>();
         babyPlumRigid = gameObject.GetComponentMust<Rigidbody2D>();
         target = FindObjectOfType<PlayerController>().transform;
+    }
+
+    void Start()
+    {
+        gameObject.SetActive(true);
+        
         
         StartCoroutine("mobMove");
     }
@@ -44,10 +50,9 @@ public class BabyPlum : MonoBehaviour
 
     void Update()
     {
-       // noAtFlyRigid.transform.LookAt(target);
+         // noAtFlyRigid.transform.LookAt(target);
         FollowTarget();
 
-        //
         Vector3 direction = target.position - transform.position;        
         direction.Normalize();
         vec = direction;

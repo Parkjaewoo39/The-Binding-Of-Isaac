@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1780791696996177727}
   - component: {fileID: 1780791696996177726}
   - component: {fileID: 1780791696996177725}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: TraceCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
