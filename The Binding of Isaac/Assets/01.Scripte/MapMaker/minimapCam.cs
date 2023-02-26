@@ -6,13 +6,20 @@ public class minimapCam : MonoBehaviour
 {
     public Transform player;
 
-    private void LateUpdate()
+    private void Awake()
     {
         Vector3 newPosition = player.position;
-        newPosition.y = transform.position.y;
+        newPosition.z = transform.position.z;
         transform.position = newPosition;
+    }
+    
+    private void LateUpdate()
+    {
+        //Vector3 newPosition = player.position;
+        //newPosition.z = transform.position.z-110f;
+       
 
-        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
+        transform.rotation = Quaternion.Euler(0f, 0f, player.eulerAngles.z);
 
     }
    

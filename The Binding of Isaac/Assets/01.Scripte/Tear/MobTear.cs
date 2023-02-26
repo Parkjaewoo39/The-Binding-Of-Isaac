@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MobTear : MonoBehaviour
@@ -24,7 +22,7 @@ public class MobTear : MonoBehaviour
         mobTear = GetComponent<Animator>();
         mobTearRigid = GetComponent<Rigidbody2D>();
         
-        isSomethingCheck = false;
+        isSomethingCheck = false;        
     }
 
     void Update()
@@ -32,8 +30,7 @@ public class MobTear : MonoBehaviour
         if (!isSomethingCheck)
         {
             mobTearRigid.velocity = transform.up * mobTearSpeed * 20;            
-        }
-        
+        }        
     }
 
     //!{Shoot R&D
@@ -67,6 +64,13 @@ public class MobTear : MonoBehaviour
             //PlayerController.tearDamage
         }
         if (other.tag == "TearShadow")
+        {
+            mobTear.SetBool("Something", true);
+            Invoke("DestroyTears", 0.3f);
+
+            DestroyTears();
+        }
+        if (other.tag == "Door") 
         {
             mobTear.SetBool("Something", true);
             Invoke("DestroyTears", 0.3f);
