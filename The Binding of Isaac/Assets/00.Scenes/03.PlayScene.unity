@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.15175112, g: 0.17157367, b: 0.17971359, a: 1}
+  m_IndirectSpecularColor: {r: 0.15175092, g: 0.17157348, b: 0.17971322, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2889,7 +2889,7 @@ GameObject:
   - component: {fileID: 1757774630}
   - component: {fileID: 1757774629}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: BossUi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2995,7 +2995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1877072697
 RectTransform:
   m_ObjectHideFlags: 0

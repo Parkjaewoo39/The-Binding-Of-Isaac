@@ -146,8 +146,8 @@ public class BabyPlum1 : MonoBehaviour
             yield return new WaitForSeconds(3f);
 
 
-            //numberParttern = Random.Range(0, 2 + 1);
-            numberParttern = 2;
+            numberParttern = Random.Range(0, 2 );
+           // numberParttern = 2;
             Debug.Log(numberParttern);
             switch (numberParttern)
             {
