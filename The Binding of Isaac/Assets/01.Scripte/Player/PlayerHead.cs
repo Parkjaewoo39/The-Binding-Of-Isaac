@@ -33,7 +33,7 @@ public class PlayerHead : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
+        {            
             IsaacImage.SetBool("UpAT", true);
         }
         else if (Input.GetKeyUp(KeyCode.UpArrow))

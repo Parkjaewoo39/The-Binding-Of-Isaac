@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class BabyPlumHP : MonoBehaviour
 {
-    
+
+    public GameObject hpContainer;
     public Image hpbar;
-   
+    public float fillValue;
     public float maxHp;
     public float currenthp;
 
@@ -19,16 +20,15 @@ public class BabyPlumHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hpbar = GetComponent<Image>();
-        
         currenthp = BabyPlum1.babyPlumHp;
-        maxHp = currenthp;
+        maxHp = BabyPlum1.babyPlumHp;
     }
 
     public void BabyPlumHp()
-    {       
-        hpbar.fillAmount = currenthp / maxHp;
+    {
+        fillValue = (float)BabyPlum1.babyPlumHp;
+        fillValue = fillValue / maxHp;
+        hpContainer.GetComponent<Image>().fillAmount = fillValue;
     }
-    
+
 }
-  

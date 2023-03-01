@@ -25,20 +25,25 @@ public class Tears : MonoBehaviour
     void Start()
     {
         // PlayerController.isaacTearSpeed += 0f;
+       
+
 
         isaacTear = GetComponent<Animator>();
         tearRigid = GetComponent<Rigidbody2D>();
+      
+        transform.localScale = new Vector2(PlayerManager.TearSize, PlayerManager.TearSize);
 
         UpdateTearSpeed();
         isSomethingCheck = false;
     }
 
     void Update()
-    {    
-        if (!isSomethingCheck )
-        {            
-            tearRigid.velocity = transform.up * isaacNowTearSpeed * 20;
-        }
+    {
+        tearRigid.velocity = transform.up * isaacNowTearSpeed * 10;
+         StartCoroutine(DeathDelay());
+        // if (!isSomethingCheck )
+        // {            
+        // }
     }
 
     //!{Shoot R&D
@@ -72,6 +77,15 @@ public class Tears : MonoBehaviour
             // DestroyTears();
             //PlayerController.tearDamage
         }
+        if (other.tag == "Boss")
+        {
+            tearRigid.velocity = Vector2.zero;
+            isaacTear.SetBool("Something", true);
+            Invoke("DestroyTears", 0.3f);
+            Debug.Log("??");
+            // DestroyTears();
+            //PlayerController.tearDamage
+        }
         if (other.tag == "TearShadow")
         {
             isaacTear.SetBool("Something", true);
@@ -86,6 +100,14 @@ public class Tears : MonoBehaviour
     {
        
         isaacNowTearSpeed += PlayerController.isaacTearSpeed;
+    }
+
+    IEnumerator DeathDelay() 
+    {
+        yield return new WaitForSeconds(PlayerController.isaacTime);
+        yield return new WaitForSeconds(PlayerController.isaacRange);
+        isaacTear.SetBool("Something", true);
+        Invoke("DestroyTears", 0.3f);
     }
     
 }

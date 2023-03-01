@@ -6,9 +6,9 @@ public enum Patterns { OnePress, TwoTurn, ThreeShotMove }
 
 public class BabyPlum1 : MonoBehaviour
 {
-    private int iteration = 0;  //°¢µµÀÇ Default
+    private int iteration = 0;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Default
     private bool isUseCheck = false;
-    //´«¹°À» ¿ÀºêÁ§Æ®³ª ÇÁ¸®ÆÕ Çü
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     //public PrefabType bossTearPrefab = default;
     public List<GameObject> bossTearObj = default;
 
@@ -20,15 +20,17 @@ public class BabyPlum1 : MonoBehaviour
 
     public Pattern bossPattern = default;
 
-    public float turnSpeed = 2f;    //µ¹¾Æ°¡´Â ¼Óµµ
-    public float circleSacle = 5f;  //360µµÀÇ ±âÁØÀÌ µÇ´Â ¿øÅ©±â
+    public float turnSpeed = 2f;    //ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½Óµï¿½
+    public float circleSacle = 5f;  //360ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½Å©ï¿½ï¿½
 
-    public int angleInterval = 15;  //´«¹° °£°Ý
-    public int startAngle = 30;   //¹ß»çÇÏ´Â Ã¹ °¢
-    public int endAngle = 360;    //¸¶Áö¸· °¢µµ
+    public float coolDown =default;
+
+    public int angleInterval = 15;  //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    public int startAngle = 30;   //ï¿½ß»ï¿½ï¿½Ï´ï¿½ Ã¹ ï¿½ï¿½
+    public int endAngle = 360;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 
-    // ¡è  boss test
+    // ï¿½ï¿½  boss test
 
     private Animator babyPlumAni = default;
     private Rigidbody2D babyPlumRigid = default;
@@ -46,6 +48,7 @@ public class BabyPlum1 : MonoBehaviour
     private bool isMoveCheck = false;
     private bool isPatternStart = false;
     private bool isPartternThreeCheck = false;
+    private bool coolDownAttack  = false;
 
     Vector2 vec;
     Vector3 lastVelocity;
@@ -133,7 +136,7 @@ public class BabyPlum1 : MonoBehaviour
         transform.Translate(direction * (circleSacle * Time.deltaTime));
         iteration++;
         if (iteration > 360)
-            iteration -= 360; //°¢µµ¸¦ 0~360·Î ¼³Á¤ÇÏ±â À§ÇØ
+            iteration -= 360; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0~360ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½
     }   //BabyPlumMove()
 
 
@@ -169,12 +172,12 @@ public class BabyPlum1 : MonoBehaviour
     }
 
     //!{PatternOne 
-    // ºü¸¥ ´«¹° 360/8 ¹æÇâ
-    //º¸Åë ´«¹° 360/14 ¹æÇâ
-    //Âï±â
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 360/8 ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 360/14 ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½
     private IEnumerator PatternOne()
     {
-        //ÃÊ±â °¢µµ 0µµ
+        //ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½
         if (!isUseCheck)
         {
             isMoveCheck = true;
@@ -259,7 +262,7 @@ public class BabyPlum1 : MonoBehaviour
     }
 
     //!{PatternThree()
-    //ÀÔ»ç ¹Ý»ç ¾îÄÉÇØ
+    //ï¿½Ô»ï¿½ ï¿½Ý»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private IEnumerator PatternThree()
     {
 
@@ -306,6 +309,23 @@ public class BabyPlum1 : MonoBehaviour
         }
     }
 
+    void Attack()
+    {
+        if(!coolDownAttack)
+        {
+            PlayerManager.DamageIsaac(1);
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    private IEnumerator CoolDown()
+    {
+        coolDownAttack = true;
+        yield return new WaitForSeconds(coolDown);
+        coolDownAttack = false;
+    }
+
+
 
     //!{Hit
     public void Hit()
@@ -333,13 +353,17 @@ public class BabyPlum1 : MonoBehaviour
     }   //Did()
 
 
-    // ´«¹° ¸ÂÀ»¶§
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Tear")
         {
             Hit();
             //Debug.Log($"{noAtFlyHp}");
+        }
+        if(other.tag == "Player")
+        {
+            Attack();
         }
 
     }
