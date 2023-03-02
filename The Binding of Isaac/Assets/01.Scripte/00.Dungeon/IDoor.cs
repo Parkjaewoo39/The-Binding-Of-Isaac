@@ -22,16 +22,23 @@ public class IDoor : MonoBehaviour
             switch(doorType)
             {
                 case DoorType.bottom:
-                rect.position = new Vector2(transform.position.x, transform.position.y - widthOffset)*100;
+                player.transform.position = new Vector2(player.transform.position.x,player.transform.position.y-8);
+                
+                //rect.position = new Vector2(transform.position.x, transform.position.y - widthOffset)*100;
                 break;
                 case DoorType.left:
-                rect.position = new Vector2(transform.position.x - widthOffset, transform.position.y )*100;
+                player.transform.position = new Vector2(player.transform.position.x-1,player.transform.position.y);
+               // rect.position = new Vector2(transform.position.x - widthOffset, transform.position.y )*100;
                 break;
                 case DoorType.right:
-                rect.position = new Vector2(transform.position.x + widthOffset, transform.position.y)*100;
+                player.transform.position = new Vector2(player.transform.position.x+12,player.transform.position.y);
+
+               // rect.position = new Vector2(transform.position.x + widthOffset, transform.position.y)*100;
                 break;
                 case DoorType.top:
-                rect.position = new Vector2(transform.position.x, transform.position.y + widthOffset)*100;
+                player.transform.position = new Vector2(player.transform.position.x,player.transform.position.y+8);
+
+               // rect.position = new Vector2(transform.position.x, transform.position.y + widthOffset)*100;
                 break;
 
             }

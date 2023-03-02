@@ -18,6 +18,8 @@ public class IRoomController : MonoBehaviour
 
     IRoomInfo currentLoadRoomData;
 
+    IRoom currRoom;
+
     Queue<IRoomInfo> loadRoomQueue = new Queue<IRoomInfo>();
 
     public List<IRoom> loadedRooms = new List<IRoom>();
@@ -144,6 +146,12 @@ public class IRoomController : MonoBehaviour
             room.transform.parent = transform;
 
             isLoadingRoom = false;
+
+            if(loadedRooms.Count == 0)
+            {
+                CameraController.instance.currRoom = room;
+            }
+
             Debug.Log(room.transform.position);
             loadedRooms.Add(room);           
         }
@@ -161,6 +169,12 @@ public class IRoomController : MonoBehaviour
     public IRoom FindRoom(int x, int y)
     {
         return loadedRooms.Find(item => item.X == x && item.Y == y);
+    }
+
+    public void OnPlayerEnterRoom(IRoom room)
+    {
+        CameraController.instance.currRoom = room;
+        currRoom= room;
     }
 }
 // Start is called before the first frame update

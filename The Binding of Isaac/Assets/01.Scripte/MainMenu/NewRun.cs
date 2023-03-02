@@ -2,22 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-
-public class ChoiceMenu : MonoBehaviour
+public class NewRun : MonoBehaviour
 {
     public Toggle[] PlayCheck;
     public float speed;
     public Vector2 direction;
     bool keyDelay;
     // Start is called before the first frame update
-    void Start()
-    {
-        keyDelay = false;
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (GetComponent<RectTransform>().localPosition.y > 0 || GetComponent<RectTransform>().localPosition.x < 0)
@@ -30,7 +23,7 @@ public class ChoiceMenu : MonoBehaviour
     }
     void InputKey()
     {
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
             if (!keyDelay)
             {
@@ -52,17 +45,7 @@ public class ChoiceMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (PlayCheck[0].interactable)
-            {
-                transform.parent.GetComponent<MainMenuController>().isNewRun = true;
-                transform.parent.GetComponent<MainMenuController>().isNewRunChange = true;
-
-            }
-            else
-            {
-                transform.parent.GetComponent<MainMenuController>().isOption = true;
-                transform.parent.GetComponent<MainMenuController>().isOptionChange = true;
-            }
+            SceneManager.LoadScene("BasementMain");
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -85,4 +68,6 @@ public class ChoiceMenu : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         tran.gameObject.SetActive(false);
     }
+
+    
 }

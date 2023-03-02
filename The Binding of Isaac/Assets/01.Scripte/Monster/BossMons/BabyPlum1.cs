@@ -229,7 +229,7 @@ public class BabyPlum1 : MonoBehaviour
         bool isSpinShoot = false;
         babyPlumRigid.velocity = Vector2.zero;
         yield return new WaitForSeconds(0.2f);
-        if (0 < vec.x)
+        if ( 0< vec.x )
         {
             babyPlumAni.SetBool("ShootTurn", true);
             babyPlumRigid.AddForce(new Vector2(20f, 0f), ForceMode2D.Impulse);
