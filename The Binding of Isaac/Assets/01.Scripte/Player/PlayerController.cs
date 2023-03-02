@@ -28,7 +28,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D IsaacRigid;
     private Animator IsaacImage = default;
     //private SpriteRenderer iRenderer;
-
+    
+    public bool isKeyDownOneCheck =false;
     public bool isGetKeyCheck = false;
 
     Vector3 lookDirection;
@@ -122,7 +123,6 @@ public class PlayerController : MonoBehaviour
         isaacMaxReload = PlayerManager.FireRate;
         isaacMoveSpeed = PlayerManager.MoveSpeed;
 
-
         //?????? ?????
         if (!Input.anyKey)
         {
@@ -157,8 +157,6 @@ public class PlayerController : MonoBehaviour
             Shoot(left, shootHor, shootVer);
             isaacReload = Time.time;
         }
-
-
 
         //{wasd ???
 
@@ -206,7 +204,7 @@ public class PlayerController : MonoBehaviour
             // IsaacRigid.AddForce(Vector2.left * isaacMoveSpeed, ForceMode2D.Impulse);
 
             //Renderer.flipX = true;
-             transform.localScale = new Vector2(-2.2f, 2f);
+            transform.localScale = new Vector2(-2.2f, 2f);
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
@@ -214,10 +212,22 @@ public class PlayerController : MonoBehaviour
         }
 
         //!} Bomb
-        if(Input.GetKeyDown(KeyCode.E))
+        if (0 < PlayerManager.Bomb)
         {
-            GameObject bomb = Instantiate(Bomb,transform.position, transform.rotation);
+            if (Input.GetKeyDown(KeyCode.E)&& !isKeyDownOneCheck)
+            {
+                isKeyDownOneCheck = true;
+                PlayerManager.BombChange(-1);
+                GameObject bomb = Instantiate(Bomb, transform.position, transform.rotation);
+                
+            }
+            if(Input.GetKeyUp(KeyCode.E))
+            {
+                isKeyDownOneCheck = false;
+            }
         }
+
+
 
         //}wasd ???
 
@@ -251,7 +261,9 @@ public class PlayerController : MonoBehaviour
 
 
     }       //Update()
-    
+
+   
+
 
 
 }

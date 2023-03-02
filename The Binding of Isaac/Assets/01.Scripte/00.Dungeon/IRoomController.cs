@@ -13,7 +13,7 @@ public class IRoomInfo
 public class IRoomController : MonoBehaviour
 {
     public static IRoomController instance;
-
+    public GameObject tileGrid;
     string currentWorldName = "Basement";
 
     IRoomInfo currentLoadRoomData;
@@ -21,6 +21,8 @@ public class IRoomController : MonoBehaviour
     Queue<IRoomInfo> loadRoomQueue = new Queue<IRoomInfo>();
 
     public List<IRoom> loadedRooms = new List<IRoom>();
+
+    public GameObject roomPrefabs = default;
 
     bool isLoadingRoom = false;
     bool spawnedBoosRoom = false;
@@ -33,6 +35,7 @@ public class IRoomController : MonoBehaviour
     }
     void Start()
     {
+        UpdateRoomQueue();
         // LoadRoom("Start", 0, 0);
         // LoadRoom("Empty", 1, 0);
         // LoadRoom("Empty", -1, 0);
@@ -70,6 +73,7 @@ public class IRoomController : MonoBehaviour
         }
 
         currentLoadRoomData = loadRoomQueue.Dequeue();
+        Debug.Log(currentLoadRoomData);
         isLoadingRoom = true;
 
         StartCoroutine(LoadRoomRoutine(currentLoadRoomData));
@@ -96,40 +100,43 @@ public class IRoomController : MonoBehaviour
         if (DoesRoomExist(x, y))
         {
             return;
-        }
+        }   
         IRoomInfo newRoomData = new IRoomInfo();
         newRoomData.name = name;
         newRoomData.X = x;
         newRoomData.Y = y;
 
         loadRoomQueue.Enqueue(newRoomData);
+        
     }
+    
+    
 
     IEnumerator LoadRoomRoutine(IRoomInfo info)
     {
         string roomName = currentWorldName + info.name;
-        AsyncOperation loadRoom = SceneManager.LoadSceneAsync(
-            roomName, LoadSceneMode.Additive);
-
-        while (loadRoom.isDone == false)
-        {
-            yield return null;
-        }
+        GameObject loadRoom = Instantiate(roomPrefabs); 
+        loadRoom.transform.SetParent(tileGrid.transform,false);
+        IRoom loadRoomScript =loadRoom.GetComponent<IRoom>();
+        //SceneManager.LoadSceneAsync(roomName, LoadSceneMode.Additive);
+        yield return null;
+        // while (loadRoom.isDone == false)
+        // {
+        //     yield return null;
+        // }
     }
 
     public void RegisterRoom(IRoom room)
-    {
-        Debug.Log(DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y));
-        if (!DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y))
+    {        //Debug.Log(currentLoadRoomData);
+        if (!DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y) )
         {
-
             room.transform.position = new Vector3
             (
                 currentLoadRoomData.X * room.Width,
                 currentLoadRoomData.Y * room.Height,
                 0
             );
-
+            
             room.X = currentLoadRoomData.X;
             room.Y = currentLoadRoomData.Y;
             room.name = currentWorldName + "-" + currentLoadRoomData.name + " "
@@ -137,7 +144,7 @@ public class IRoomController : MonoBehaviour
             room.transform.parent = transform;
 
             isLoadingRoom = false;
-
+            Debug.Log(room.transform.position);
             loadedRooms.Add(room);           
         }
         else

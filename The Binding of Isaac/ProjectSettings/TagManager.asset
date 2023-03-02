@@ -12,6 +12,9 @@ TagManager:
   - Door
   - Boss
   - BossTear
+  - Key
+  - Coin
+  - Bomb
   layers:
   - Default
   - TransparentFX

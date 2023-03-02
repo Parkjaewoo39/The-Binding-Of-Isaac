@@ -6,6 +6,7 @@ public enum Patterns { OnePress, TwoTurn, ThreeShotMove }
 
 public class BabyPlum1 : MonoBehaviour
 {
+    public static BabyPlum1 instance;
     private int iteration = 0;  //������ Default
     private bool isUseCheck = false;
     //������ ������Ʈ�� ������ ��

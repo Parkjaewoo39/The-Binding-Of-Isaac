@@ -9,7 +9,6 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager instance;
 
     public static int itemAmount = 0;
-
     private static int coinCount  = 0;
     private static int keyCount = 0;
     private static int bombCount = 0;
@@ -23,6 +22,12 @@ public class PlayerManager : MonoBehaviour
     private static float moveSpeed = 0.5f;
     private static float fireRate = 0.5f;
     private static float tearSize = 30f;
+
+    public static int Coin { get => coinCount; set => coinCount =value;}
+    public static int Key { get => keyCount; set => keyCount =value;}
+    public static int Bomb { get => bombCount; set => bombCount =value;}
+
+
 
     public static float Health { get => health; set => health = value; }
 
@@ -56,7 +61,7 @@ public class PlayerManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {    
        coinText.text = "" + coinCount;
        bombText.text = "" + bombCount;
        keyText.text = "" + keyCount;
@@ -65,7 +70,7 @@ public class PlayerManager : MonoBehaviour
     public static void DamageIsaac(float damage)
     {
         health -= damage;
-
+        
         if (Health <= 0)
         {
             DieIsaac();
@@ -93,7 +98,7 @@ public class PlayerManager : MonoBehaviour
 
     public static void CoinChange(int coin)
     {
-        coinCount += coin;
+        coinCount += coin;        
     }
 
     public static void BombChange(int bomb)
@@ -128,7 +133,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private static void DieIsaac()
+    public static void DieIsaac()
     {
 
     }

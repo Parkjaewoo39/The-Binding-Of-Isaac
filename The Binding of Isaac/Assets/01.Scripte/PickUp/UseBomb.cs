@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngien.UI;
+using UnityEngine.UI;
+
 
 public class UseBomb : MonoBehaviour
 {
     public static UseBomb instance;
-    private Animator bombAni =default;
+    private Animator bombAni ;
     public GameObject obj;
     public GameObject useBombObj = default;
+
+    public Rigidbody2D bombRigid;
     
     void Awake()
     {
@@ -20,7 +23,9 @@ public class UseBomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bombAni = gameObject.GetComponenet<Animator>();
+        bombAni = gameObject.GetComponent<Animator>();
+        bombRigid = gameObject.GetComponent<Rigidbody2D>();
+        StartCoroutine("Exp");
     }
 
     // Update is called once per frame
@@ -31,23 +36,27 @@ public class UseBomb : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        GameObject explor =Instantiate(useBombObj);
-        explor.transform.position = transform.position;
-        Destroy(explor ,3f);
-        bombAni.SetBool("Exp", true);
+        GameObject explor =Instantiate(useBombObj,transform.position, transform.rotation);
+        
+        explor.transform.localScale = new Vector3(1f,1f,1f);
+        
         
 
-        Collider2D[] clos = Physics2D.OverlapAreaAll(explor.transform.position, explor.transform.localScale*2);
+        Collider2D[] clos = Physics2D.OverlapCircleAll(explor.transform.position, 2.0f);
         for(int i = 0; i < clos.Length; i++)
         {
-            if(clos[i].gameObject.tag == "Enemy" || clos[i].gameObject.tag == "Boss")
+            if(clos[i].gameObject.tag == "Enemy" )
             {
-                BabyPlum1.HitExp(100);
+                
+            }
+            if((clos[i].gameObject.tag == "Boss"))
+            {
+                //BabyPlum1.GetComponent<BabyPlum1>().HitExp(100);
             }
             if(clos[i].gameObject.tag == "Player")
             {
                 
-                PlayerManager.DieIsaac(1);
+                PlayerManager.DamageIsaac(1);
             }
             if(clos[i].gameObject.tag == "Obstacle" || clos[i].gameObject.tag == "Hidden")
             {
@@ -55,4 +64,12 @@ public class UseBomb : MonoBehaviour
             }
         }
     }
+     IEnumerator Exp()
+    {
+        yield return new WaitForSeconds(3f);
+         bombAni.SetBool("Exp", true);         
+         Destroy(gameObject);
+    }
+    
+    
 }

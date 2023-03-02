@@ -27,8 +27,7 @@ public class IRoom : MonoBehaviour
     void Start()
     {
         if (IRoomController.instance == null)
-        {
-            Debug.Log(IRoomController.instance);
+        {           
             return;
         }
 
@@ -54,6 +53,13 @@ public class IRoom : MonoBehaviour
             }
         }
         Debug.Log(IRoomController.instance);
+        Debug.Log(this);
+        StartCoroutine(Regieter());
+    }
+
+    IEnumerator Regieter()
+    {
+        yield return null;
         IRoomController.instance.RegisterRoom(this);
     }
 
@@ -113,7 +119,7 @@ public class IRoom : MonoBehaviour
     {
         if (IRoomController.instance.DoesRoomExist(X, Y + 1))
         {
-            return IRoomController.instance.FindRoom((X), Y + 1);
+            return IRoomController.instance.FindRoom(X, Y +1);
         }
         return null;
     }

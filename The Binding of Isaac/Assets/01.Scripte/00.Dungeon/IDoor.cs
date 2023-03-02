@@ -12,8 +12,8 @@ public class IDoor : MonoBehaviour
     public DoorType doorType;
     public GameObject doorCollider;
     private GameObject player;
-
-    private float widthOffset = 1.75f;
+    private RectTransform rect;
+    private float widthOffset = -2f;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,16 +22,16 @@ public class IDoor : MonoBehaviour
             switch(doorType)
             {
                 case DoorType.bottom:
-                player.transform.position = new Vector2(transform.position.x, transform.position.y - widthOffset);
+                rect.position = new Vector2(transform.position.x, transform.position.y - widthOffset)*100;
                 break;
                 case DoorType.left:
-                player.transform.position = new Vector2(transform.position.x - widthOffset, transform.position.y );
+                rect.position = new Vector2(transform.position.x - widthOffset, transform.position.y )*100;
                 break;
                 case DoorType.right:
-                player.transform.position = new Vector2(transform.position.x + widthOffset, transform.position.y);
+                rect.position = new Vector2(transform.position.x + widthOffset, transform.position.y)*100;
                 break;
                 case DoorType.top:
-                player.transform.position = new Vector2(transform.position.x, transform.position.y + widthOffset);
+                rect.position = new Vector2(transform.position.x, transform.position.y + widthOffset)*100;
                 break;
 
             }
@@ -41,6 +41,24 @@ public class IDoor : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        rect = gameObject.AddComponent<RectTransform>();
+        switch(doorType)
+            {
+                case DoorType.bottom:
+                rect.position = new Vector2(transform.position.x, transform.position.y - widthOffset);
+                break;
+                case DoorType.left:
+                rect.position = new Vector2(transform.position.x - widthOffset, transform.position.y );
+                break;
+                case DoorType.right:
+                rect.position = new Vector2(transform.position.x + widthOffset, transform.position.y);
+                break;
+                case DoorType.top:
+                rect.position = new Vector2(transform.position.x, transform.position.y + widthOffset);
+                break;
+
+            }
+
     }
 
     // Update is called once per frame
