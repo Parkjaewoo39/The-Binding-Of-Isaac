@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49e67f05e67ca8647bf107978143dadf
+guid: d164a29098ec2e246af8641f1b590877
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pickup_003_key_0
+      name: bomb_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 39
+        x: 8
+        y: 35
         width: 14
-        height: 20
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,166 +143,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b39a68bf6d9824898c63203ffa1a75
-      internalID: -1833109390
+      spriteID: 0b997b6e9d487454cb0e2521edee9fab
+      internalID: -574479029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_003_key_1
+      name: bomb_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 39
-        width: 14
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58a9729baa95bf149bbd67f0c9a0746a
-      internalID: -153811134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_2
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 34
-        width: 20
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbafde47794b58c418f375a929f6c093
-      internalID: 1670891860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_3
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 17
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55e7653c99b915e4eb2398f8d87cc79a
-      internalID: -1331300717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_4
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 21
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7592167784dddb643927bafc15777ff3
-      internalID: 1575677205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_5
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 19
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7616e6321c53074ba0917a93c5e19f2
-      internalID: -1331088563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_6
-      rect:
-        serializedVersion: 2
-        x: 49
+        x: 46
         y: 22
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a2e58b30edeed54aa35295e7efda29f
-      internalID: -304916213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_7
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 19
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c24352745b442764c81aeefc02d46504
-      internalID: -1871760891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_003_key_8
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 1
         width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8080bcbfdd4c1394ab1c21dabf713b2a
+      internalID: -1051274764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 21
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d609532cb6a9f6c4caad8e8cec352c9a
+      internalID: -434951536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 15
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -311,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8403e716e28e6804bbd6f87dacfda1d2
-      internalID: 84058043
+      spriteID: 5e4db1c8306ddce41bdd5559ce92fcf2
+      internalID: 1480549603
       vertices: []
       indices: 
       edges: []
@@ -320,7 +215,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e441636a0c17bd54b9902dbc59adb50e
+    spriteID: ea51907b7f76c764d99092e169948f6a
     internalID: 0
     vertices: []
     indices: 
@@ -328,15 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pickup_003_key_4: 1575677205
-      pickup_003_key_0: -1833109390
-      pickup_003_key_3: -1331300717
-      pickup_003_key_1: -153811134
-      pickup_003_key_2: 1670891860
-      pickup_003_key_5: -1331088563
-      pickup_003_key_6: -304916213
-      pickup_003_key_7: -1871760891
-      pickup_003_key_8: 84058043
+      bomb_0: -574479029
+      bomb_1: -1051274764
+      bomb_3: 1480549603
+      bomb_2: -434951536
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

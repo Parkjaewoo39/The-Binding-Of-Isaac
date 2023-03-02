@@ -325,17 +325,25 @@ public class BabyPlum1 : MonoBehaviour
         coolDownAttack = false;
     }
 
-
+    public void HitExp(int a)
+    {
+        babyPlumHp -= a;
+        if(babyPlumHp <= 0)
+        {
+            Die();
+        }
+    }
 
     //!{Hit
-    public void Hit()
+    public  void Hit()
     {
+        
         //Debug.Log(PlayerController.isaacDamage);
         babyPlumHp -= PlayerController.isaacDamage;
         // Debug.Log(babyPlumHp);
 
         if (0 < babyPlumHp)
-        {
+        {            
 
         }
         if (babyPlumHp <= 0)
@@ -364,6 +372,7 @@ public class BabyPlum1 : MonoBehaviour
         if(other.tag == "Player")
         {
             Attack();
+            
         }
 
     }

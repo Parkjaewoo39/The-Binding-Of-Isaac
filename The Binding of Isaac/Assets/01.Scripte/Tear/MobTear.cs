@@ -7,7 +7,7 @@ public class MobTear : MonoBehaviour
 
     private Animator mobTear = default;
 
-    private Collider2D mobCollider2D = default;
+    //private Collider2D mobCollider2D = default;
 
     private float mobTearSpeed = 2.5f;
 

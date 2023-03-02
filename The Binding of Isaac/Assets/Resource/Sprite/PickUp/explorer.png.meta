@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49daf6f73aceb234b81c7e7cce19e410
+guid: 33e5abb73d630d94ba44db1ccd6d03cb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,139 +129,223 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pickup_002_coin_0
+      name: explorer_104
       rect:
         serializedVersion: 2
-        x: 7
+        x: 312
+        y: 5
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67cb690c26878b418ef14e07313743c
+      internalID: -2017341459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 294
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cccf646cac961c47ba035622d740471
+      internalID: 524756711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 294
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ac3bc8ae10e644fbc10680d8e0fdbc
+      internalID: 200879085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 291
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530eab189e4f0794cb90a777e18f3d71
+      internalID: -1530576278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 291
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e0799b3a133e246ba4679dcddf04e0
+      internalID: -2029158673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 197
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109c066564d0bb14f84dc7d160e4de27
+      internalID: -639917498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 197
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937fc9fdd0b61ec458bcfad23caab70d
+      internalID: 976600362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 201
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f869ec355e4874ba818dc799b801d7
+      internalID: 215078800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 203
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688d7370d1f45d24caf05418b1677ac2
+      internalID: -4463036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650307b2e40b14b41a04a87d3088f6ba
+      internalID: 109395006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explorer_9
+      rect:
+        serializedVersion: 2
+        x: 100
         y: 112
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4014450d1013074db780d5cdee99c63
-      internalID: -1927102702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 112
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49019514b879c94458b0e6a6bfbcca17
-      internalID: 1793036021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 96
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abe30b04e4cfdf84dac65aa6bb699826
-      internalID: 1277908502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 96
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3ec2aceabcced54aa2a6bdc720de056
-      internalID: 1566308157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_4
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 90
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f16ee76b28dadfb4182fa6520ab01dd8
-      internalID: -999881716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_5
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 93
-        width: 30
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf7c0e221528b248945c12af8c43951
-      internalID: 1575496046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_6
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 78
-        width: 33
-        height: 34
+        width: 88
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +353,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5c3f95b24a96b4583b86b8c9dac16e
-      internalID: -1969951238
+      spriteID: 440aad083f1547148acd92db5eeee360
+      internalID: -282007758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_7
+      name: explorer_10
       rect:
         serializedVersion: 2
-        x: 76
-        y: 13
-        width: 39
-        height: 36
+        x: 193
+        y: 113
+        width: 88
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,71 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510ee1a1ca04a1946a0614deb6aacb06
-      internalID: 1165454808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_8
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 10
-        width: 40
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5852e7dfde1fd9479ac4434f15d3f85
-      internalID: -1175900423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_9
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 80
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0e1fca70ddbabe42b267f7ed1ca5a02
-      internalID: -1598098404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_10
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 80
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b3fec92b516ecb4581c49711cbe80b2
-      internalID: -739193245
+      spriteID: a7a662f587d9f0b47923b50975747b1d
+      internalID: -1486950778
       vertices: []
       indices: 
       edges: []
@@ -362,7 +383,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 03c8f8fbd4c488f49bfe7e91fa387256
+    spriteID: 5ea147b43d36ff14f90916607810e973
     internalID: 0
     vertices: []
     indices: 
@@ -370,28 +391,111 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pickup_002_coin_11: -2050871013
-      pickup_002_coin_2: 1277908502
-      pickup_002_coin_6: -1969951238
-      pickup_002_coin_13: -40225043
-      pickup_002_coin_10: -739193245
-      pickup_002_coin_20: 369132108
-      pickup_002_coin_7: 1165454808
-      pickup_002_coin_4: -999881716
-      pickup_002_coin_3: 1566308157
-      pickup_002_coin_12: -971032942
-      pickup_002_coin_16: 703090168
-      pickup_002_coin_18: -1997936754
-      pickup_002_coin_21: -920188873
-      pickup_002_coin_1: 1793036021
-      pickup_002_coin_15: -825385555
-      pickup_002_coin_0: -1927102702
-      pickup_002_coin_17: 2041509856
-      pickup_002_coin_5: 1575496046
-      pickup_002_coin_19: 117250350
-      pickup_002_coin_8: -1175900423
-      pickup_002_coin_14: 981044464
-      pickup_002_coin_9: -1598098404
+      explorer_101: -162699506
+      explorer_79: -371965428
+      explorer_33: 85750171
+      explorer_61: -1708512778
+      explorer_72: -152136774
+      explorer_46: -2143023233
+      explorer_51: -1313937784
+      explorer_91: 131528735
+      explorer_57: -1335645591
+      explorer_43: 697612380
+      explorer_62: 552001488
+      explorer_69: -728021780
+      explorer_30: -46901885
+      explorer_85: -875320921
+      explorer_27: 62551028
+      explorer_63: -1497359536
+      explorer_22: -1191780400
+      explorer_67: -1279675990
+      explorer_48: -1283838711
+      explorer_95: 1918321768
+      explorer_54: 1562128050
+      explorer_98: -718188970
+      explorer_20: 1274173
+      explorer_34: -683353222
+      explorer_77: 365012586
+      explorer_32: 1799374668
+      explorer_74: -599911385
+      explorer_4: -639917498
+      explorer_29: 1321251578
+      explorer_92: 1962767015
+      explorer_87: -788629142
+      explorer_3: -2029158673
+      explorer_96: 240060024
+      explorer_21: -2007083199
+      explorer_25: 1271597499
+      explorer_10: -1486950778
+      explorer_59: -1940725509
+      explorer_66: -526943374
+      explorer_93: -1593355681
+      explorer_7: -4463036
+      explorer_28: -279855066
+      explorer_6: 215078800
+      explorer_104: -2017341459
+      explorer_45: -2101055451
+      explorer_15: 565754664
+      explorer_2: -1530576278
+      explorer_58: -2146479661
+      explorer_90: 2097191648
+      explorer_73: -1506124838
+      explorer_26: 1164403665
+      explorer_0: 524756711
+      explorer_89: -195159717
+      explorer_83: -1483625633
+      explorer_86: 995701556
+      explorer_14: -1575462548
+      explorer_88: -411289867
+      explorer_71: 717100942
+      explorer_44: 1535797807
+      explorer_68: -945259826
+      explorer_12: -1925640607
+      explorer_41: -572900894
+      explorer_19: 396498749
+      explorer_75: 1597960320
+      explorer_24: -293713641
+      explorer_56: -490801174
+      explorer_65: -1211017142
+      explorer_100: -1864260010
+      explorer_9: -282007758
+      explorer_1: 200879085
+      explorer_5: 976600362
+      explorer_35: -67262080
+      explorer_81: 1810636033
+      explorer_64: -402879962
+      explorer_84: -775547712
+      explorer_23: -551495975
+      explorer_47: -295045242
+      explorer_97: -1254484818
+      explorer_94: -1034458344
+      explorer_17: 1573496252
+      explorer_18: 947697934
+      explorer_50: 820857818
+      explorer_80: -126475765
+      explorer_8: 109395006
+      explorer_70: -615464935
+      explorer_16: 118166729
+      explorer_55: -1954669897
+      explorer_82: -652764622
+      explorer_39: -1028636451
+      explorer_36: -2042466938
+      explorer_60: -1149236020
+      explorer_31: -861511609
+      explorer_38: -1844252132
+      explorer_40: 232403554
+      explorer_102: -18209218
+      explorer_37: -293899094
+      explorer_49: -598424447
+      explorer_52: -1635331278
+      explorer_103: -2127426755
+      explorer_53: 255587647
+      explorer_99: -1924244307
+      explorer_76: 2068974156
+      explorer_11: -771458563
+      explorer_78: -1889151916
+      explorer_13: 580650072
+      explorer_42: 563353062
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -31,9 +31,7 @@ public class IRoom : MonoBehaviour
             Debug.Log(IRoomController.instance);
             return;
         }
-        // if(IRoomController.instance != null)
-        // {
-        // }
+
 
         IDoor[] ds = GetComponentsInChildren<IDoor>();
         foreach (IDoor d in ds)
@@ -55,12 +53,13 @@ public class IRoom : MonoBehaviour
                     break;
             }
         }
+        Debug.Log(IRoomController.instance);
         IRoomController.instance.RegisterRoom(this);
     }
 
     void Update()
     {
-        if(name.Contains("End") && !updatedDoors)
+        if (name.Contains("End") && !updatedDoors)
         {
             RemoveUnconnectedDoors();
             updatedDoors = true;
@@ -74,20 +73,20 @@ public class IRoom : MonoBehaviour
             switch (door.doorType)
             {
                 case IDoor.DoorType.right:
-                if(GetRight() == null)
-                door.gameObject.SetActive(false);                    
+                    if (GetRight() == null)
+                        door.gameObject.SetActive(false);
                     break;
                 case IDoor.DoorType.left:
-                    if(GetLeft() == null)
-                door.gameObject.SetActive(false);
+                    if (GetLeft() == null)
+                        door.gameObject.SetActive(false);
                     break;
                 case IDoor.DoorType.top:
-                    if(GetTop() == null)
-                door.gameObject.SetActive(false);
+                    if (GetTop() == null)
+                        door.gameObject.SetActive(false);
                     break;
                 case IDoor.DoorType.bottom:
-                   if(GetBottom() == null)
-                door.gameObject.SetActive(false);
+                    if (GetBottom() == null)
+                        door.gameObject.SetActive(false);
                     break;
             }
         }
@@ -96,7 +95,7 @@ public class IRoom : MonoBehaviour
 
     public IRoom GetRight()
     {
-        if(IRoomController.instance.DoesRoomExist(X + 1, Y))
+        if (IRoomController.instance.DoesRoomExist(X + 1, Y))
         {
             return IRoomController.instance.FindRoom((X + 1), Y);
         }
@@ -104,7 +103,7 @@ public class IRoom : MonoBehaviour
     }
     public IRoom GetLeft()
     {
-        if(IRoomController.instance.DoesRoomExist(X - 1, Y))
+        if (IRoomController.instance.DoesRoomExist(X - 1, Y))
         {
             return IRoomController.instance.FindRoom((X - 1), Y);
         }
@@ -112,17 +111,17 @@ public class IRoom : MonoBehaviour
     }
     public IRoom GetTop()
     {
-        if(IRoomController.instance.DoesRoomExist(X , Y + 1))
+        if (IRoomController.instance.DoesRoomExist(X, Y + 1))
         {
-            return IRoomController.instance.FindRoom((X ), Y + 1);
+            return IRoomController.instance.FindRoom((X), Y + 1);
         }
         return null;
     }
     public IRoom GetBottom()
     {
-        if(IRoomController.instance.DoesRoomExist(X , Y - 1))
+        if (IRoomController.instance.DoesRoomExist(X, Y - 1))
         {
-            return IRoomController.instance.FindRoom(X , Y - 1);
+            return IRoomController.instance.FindRoom(X, Y - 1);
         }
         return null;
     }
@@ -138,5 +137,5 @@ public class IRoom : MonoBehaviour
         return new Vector3(X * Width, Y * Height);
     }
     // Update is called once per frame
-    
+
 }

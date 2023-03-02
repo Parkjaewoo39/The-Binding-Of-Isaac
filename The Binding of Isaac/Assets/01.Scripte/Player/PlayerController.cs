@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : Singleton<PlayerController>
+public class PlayerController : MonoBehaviour
 {
     public static PlayerController player;
 
@@ -19,8 +19,7 @@ public class PlayerController : Singleton<PlayerController>
     public static float isaacTearHigh;
     private static float isaacMoveSpeed = 0.5f;   //?? ???
 
-
-
+    public GameObject Bomb;
     public GameObject Tear;
     public GameObject IsaacBody = default;
     public GameObject IsaacHead = default;
@@ -212,6 +211,12 @@ public class PlayerController : Singleton<PlayerController>
         else if (Input.GetKeyUp(KeyCode.A))
         {
             IsaacImage.SetBool("Right", false);
+        }
+
+        //!} Bomb
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            GameObject bomb = Instantiate(Bomb,transform.position, transform.rotation);
         }
 
         //}wasd ???

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49daf6f73aceb234b81c7e7cce19e410
+guid: dbac12d64f8f8574f8b9cff4a18a08a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,139 +129,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pickup_002_coin_0
+      name: bomb_spark_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 112
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4014450d1013074db780d5cdee99c63
-      internalID: -1927102702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 112
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49019514b879c94458b0e6a6bfbcca17
-      internalID: 1793036021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 96
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abe30b04e4cfdf84dac65aa6bb699826
-      internalID: 1277908502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 96
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3ec2aceabcced54aa2a6bdc720de056
-      internalID: 1566308157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_4
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 90
-        width: 18
+        x: 42
+        y: 42
+        width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f16ee76b28dadfb4182fa6520ab01dd8
-      internalID: -999881716
+      spriteID: 5356f2e83bd8966499acd2bb0d99f8aa
+      internalID: -454443913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_5
+      name: bomb_spark_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 93
-        width: 30
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf7c0e221528b248945c12af8c43951
-      internalID: 1575496046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickup_002_coin_6
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 78
-        width: 33
-        height: 34
+        x: 74
+        y: 42
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5c3f95b24a96b4583b86b8c9dac16e
-      internalID: -1969951238
+      spriteID: 717ecbb0094855d4fb97e97a2a9a9dfe
+      internalID: -544308126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_7
+      name: bomb_spark_3
       rect:
         serializedVersion: 2
-        x: 76
-        y: 13
-        width: 39
-        height: 36
+        x: 106
+        y: 42
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510ee1a1ca04a1946a0614deb6aacb06
-      internalID: 1165454808
+      spriteID: 1f116b6fba1a922458202b1f8cb2472b
+      internalID: -230980457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_8
+      name: bomb_spark_4
       rect:
         serializedVersion: 2
-        x: 140
+        x: 10
         y: 10
-        width: 40
-        height: 37
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,50 +206,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5852e7dfde1fd9479ac4434f15d3f85
-      internalID: -1175900423
+      spriteID: a920b0d50cff5984aa1109c024a0e27f
+      internalID: 1696637954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_9
+      name: bomb_spark_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 80
-        width: 18
-        height: 13
+        x: 42
+        y: 10
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0e1fca70ddbabe42b267f7ed1ca5a02
-      internalID: -1598098404
+      spriteID: b2b7b75aeb57fc4428e783bc896f1691
+      internalID: -1873924277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickup_002_coin_10
+      name: bomb_spark_6
       rect:
         serializedVersion: 2
-        x: 39
-        y: 80
-        width: 18
-        height: 13
+        x: 74
+        y: 10
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b3fec92b516ecb4581c49711cbe80b2
-      internalID: -739193245
+      spriteID: 55f330ebfefba8649ac38882508b885c
+      internalID: 977898182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb_spark_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a6e3334aa97af47ba5789921f3a509
+      internalID: -630558830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb_spark_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a51bff4c809094896498ea2b9240f9
+      internalID: -1308866634
       vertices: []
       indices: 
       edges: []
@@ -362,7 +299,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 03c8f8fbd4c488f49bfe7e91fa387256
+    spriteID: 08f8be32bb3832e4093ffd2382043c9e
     internalID: 0
     vertices: []
     indices: 
@@ -370,28 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pickup_002_coin_11: -2050871013
-      pickup_002_coin_2: 1277908502
-      pickup_002_coin_6: -1969951238
-      pickup_002_coin_13: -40225043
-      pickup_002_coin_10: -739193245
-      pickup_002_coin_20: 369132108
-      pickup_002_coin_7: 1165454808
-      pickup_002_coin_4: -999881716
-      pickup_002_coin_3: 1566308157
-      pickup_002_coin_12: -971032942
-      pickup_002_coin_16: 703090168
-      pickup_002_coin_18: -1997936754
-      pickup_002_coin_21: -920188873
-      pickup_002_coin_1: 1793036021
-      pickup_002_coin_15: -825385555
-      pickup_002_coin_0: -1927102702
-      pickup_002_coin_17: 2041509856
-      pickup_002_coin_5: 1575496046
-      pickup_002_coin_19: 117250350
-      pickup_002_coin_8: -1175900423
-      pickup_002_coin_14: 981044464
-      pickup_002_coin_9: -1598098404
+      bomb_spark_6: 977898182
+      bomb_spark_5: -1873924277
+      bomb_spark_3: -230980457
+      bomb_spark_1: -454443913
+      bomb_spark_0: -1308866634
+      bomb_spark_2: -544308126
+      bomb_spark_4: 1696637954
+      bomb_spark_7: -630558830
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

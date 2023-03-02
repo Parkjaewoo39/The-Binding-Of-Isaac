@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-//enum ÆÐÅÏº¯¼ö¿¡ ¿øÇÏ´Â ÀÌ¸§Å¸ÀÔÀ¸·Î ÀúÀå
+//enum ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¸ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public enum Pattern { OnePress, TwoTurn, ThreeShotMove }
 
 public class BabyPlumPattern : MonoBehaviour
 {
-    private int iteration = 0;  //°¢µµÀÇ Default
+    private int iteration = 0;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Default
     private bool isUseCheck = false;
-    //´«¹°À» ¿ÀºêÁ§Æ®³ª ÇÁ¸®ÆÕ Çü
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     //public PrefabType bossTearPrefab = default;
     public List<GameObject> bossTearObj = default;
 
@@ -22,12 +22,12 @@ public class BabyPlumPattern : MonoBehaviour
 
     public Pattern bossPattern = default;
 
-    public float turnSpeed = 2f;    //µ¹¾Æ°¡´Â ¼Óµµ
-    public float circleSacle = 5f;  //360µµÀÇ ±âÁØÀÌ µÇ´Â ¿øÅ©±â
+    public float turnSpeed = 2f;    //ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½Óµï¿½
+    public float circleSacle = 5f;  //360ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½Å©ï¿½ï¿½
 
-    public int angleInterval = 15;  //´«¹° °£°Ý
-    public int startAngle = 30;   //¹ß»çÇÏ´Â Ã¹ °¢
-    public int endAngle = 360;    //¸¶Áö¸· °¢µµ
+    public int angleInterval = 15;  //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    public int startAngle = 30;   //ï¿½ß»ï¿½ï¿½Ï´ï¿½ Ã¹ ï¿½ï¿½
+    public int endAngle = 360;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     // Start is called before the first frame update
     void Start()
@@ -66,16 +66,16 @@ public class BabyPlumPattern : MonoBehaviour
         transform.Translate(direction * (circleSacle * Time.deltaTime));
         iteration++;
         if (iteration > 360)
-            iteration -= 360; //°¢µµ¸¦ 0~360·Î ¼³Á¤ÇÏ±â À§ÇØ
+            iteration -= 360; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0~360ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½
     }   //BabyPlumMove()
 
     //!{PatternOne 
-    // ºü¸¥ ´«¹° 360/8 ¹æÇâ
-    //º¸Åë ´«¹° 360/14 ¹æÇâ
-    //Âï±â
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 360/8 ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 360/14 ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½
     private IEnumerator PatternOne()
     {
-        int babyPlumAngle = 0;  //ÃÊ±â °¢µµ 0µµ
+        //int babyPlumAngle = 0;  //ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½
         if (!isUseCheck)
         {
             isUseCheck = true;

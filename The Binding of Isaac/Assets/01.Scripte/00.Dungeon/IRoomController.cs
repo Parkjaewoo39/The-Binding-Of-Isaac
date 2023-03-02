@@ -119,6 +119,7 @@ public class IRoomController : MonoBehaviour
 
     public void RegisterRoom(IRoom room)
     {
+        Debug.Log(DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y));
         if (!DoesRoomExist(currentLoadRoomData.X, currentLoadRoomData.Y))
         {
 
