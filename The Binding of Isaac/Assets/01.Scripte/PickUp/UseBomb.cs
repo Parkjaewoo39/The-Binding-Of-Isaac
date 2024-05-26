@@ -6,70 +6,50 @@ using UnityEngine.UI;
 
 public class UseBomb : MonoBehaviour
 {
-    public static UseBomb instance;
-    private Animator bombAni ;
-    public GameObject obj;
-    public GameObject useBombObj = default;
 
-    public Rigidbody2D bombRigid;
+    private Animator bombAni;
     
-    void Awake()
-    {
-        if(instance == null)
-        {
-            instance = this;
-        }
-    }
+    Rigidbody2D bombRigid;
+    BoxCollider2D bombBoxCollider;
+
+
     // Start is called before the first frame update
     void Start()
     {
         bombAni = gameObject.GetComponent<Animator>();
         bombRigid = gameObject.GetComponent<Rigidbody2D>();
-        StartCoroutine("Exp");
+        bombBoxCollider = gameObject.GetComponent<BoxCollider2D>();
+
+        Exp();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-    
+
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+
+    public void Exp()
     {
-        GameObject explor =Instantiate(useBombObj,transform.position, transform.rotation);
-        
-        explor.transform.localScale = new Vector3(1f,1f,1f);
-        
-        
 
-        Collider2D[] clos = Physics2D.OverlapCircleAll(explor.transform.position, 2.0f);
-        for(int i = 0; i < clos.Length; i++)
-        {
-            if(clos[i].gameObject.tag == "Enemy" )
-            {
-                
-            }
-            if((clos[i].gameObject.tag == "Boss"))
-            {
-                //BabyPlum1.GetComponent<BabyPlum1>().HitExp(100);
-            }
-            if(clos[i].gameObject.tag == "Player")
-            {
-                
-                PlayerManager.DamageIsaac(1);
-            }
-            if(clos[i].gameObject.tag == "Obstacle" || clos[i].gameObject.tag == "Hidden")
-            {
-
-            }
-        }
+        bombAni.SetBool("isExploresion", true);
+        StartCoroutine(Delay());
+        
     }
-     IEnumerator Exp()
+    IEnumerator Delay() 
     {
-        yield return new WaitForSeconds(3f);
-         bombAni.SetBool("Exp", true);         
-         Destroy(gameObject);
+        yield return new WaitForSeconds(1.45f);
+        bombBoxCollider.size = new Vector2(1f, 1f);
+        bombBoxCollider.isTrigger = true;
+        yield return new WaitForSeconds(0.1f);
+        bombBoxCollider.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+
+        Destroy(gameObject);
     }
     
-    
+
+
 }

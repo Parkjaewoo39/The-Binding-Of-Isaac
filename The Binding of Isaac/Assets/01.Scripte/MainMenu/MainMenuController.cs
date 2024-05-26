@@ -21,39 +21,46 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        else 
+        {
+            if (isAniPress)
+            {
 
-        if (isAniPress)
-        {
+            }
+            else
+            {
+                PressAny();
+            }
+            if (isEscPress)
+            {
+                PressEsc();
+            }
+            else
+            {
 
+            }
+            if (isNewRun)
+            {
+                NewRunOpen();
+            }
+            else
+            {
+                NewRunClose();
+            }
+            if (isOption)
+            {
+                OptionOpen();
+            }
+            else
+            {
+                OptionClose();
+            }
         }
-        else
-        {
-            PressAny();
-        }
-        if (isEscPress)
-        {
-            PressEsc();
-        }
-        else
-        {
-
-        }
-        if (isNewRun)
-        {
-            NewRunOpen();
-        }
-        else
-        {
-            NewRunClose();
-        }
-        if (isOption)
-        {
-            OptionOpen();
-        }
-        else
-        {
-            OptionClose();
-        }
+       
     }
     void PressAny()
     {
@@ -85,9 +92,9 @@ public class MainMenuController : MonoBehaviour
     }
     void NewRunOpen()
     {
-        if(isNewRunChange)
+        if (isNewRunChange)
         {
-            transform.GetChild(3).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(1920f, 0, 0),new Quaternion(0,0,0,0));
+            transform.GetChild(3).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(1920f, 0, 0), new Quaternion(0, 0, 0, 0));
             transform.GetChild(3).gameObject.SetActive(true);
             transform.GetChild(3).GetComponent<NewRun>().direction = Vector2.left;
             transform.GetChild(3).GetComponent<NewRun>().speed = 4000f;
@@ -100,9 +107,9 @@ public class MainMenuController : MonoBehaviour
     }
     void NewRunClose()
     {
-        if(isNewRunChange)
+        if (isNewRunChange)
         {
-            transform.GetChild(1).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(-1920f, 0, 0),new Quaternion(0,0,0,0));
+            transform.GetChild(1).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(-1920f, 0, 0), new Quaternion(0, 0, 0, 0));
             transform.GetChild(1).gameObject.SetActive(true);
             transform.GetChild(3).GetComponent<NewRun>().direction = Vector2.right;
             transform.GetChild(3).GetComponent<NewRun>().speed = 4000f;

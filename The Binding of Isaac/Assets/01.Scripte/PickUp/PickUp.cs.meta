@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8bd3c9d1a0b2b0d4d8cedbd0ece455ce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - coinPrefab: {fileID: 3064234491595513498, guid: 6dc09b5f04560cb44813a80bfc56319b, type: 3}
+  - keyPrefab: {fileID: 4675375492209409046, guid: 6096b777acb67b449b6f452776128bf3, type: 3}
+  - bombPrefab: {fileID: 5083982749681408812, guid: 62c8b27385da92745b2a54aac35b6617, type: 3}
+  - coinAni: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

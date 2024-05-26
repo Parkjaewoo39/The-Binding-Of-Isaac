@@ -1,5 +1,7 @@
+
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tears : MonoBehaviour
@@ -9,29 +11,28 @@ public class Tears : MonoBehaviour
 
     private Animator isaacTear = default;
 
-    private Collider2D isaacCollider2D = default;
+    private CircleCollider2D isaacCollider2D = default;
+   
+    
 
-    private float tearSpeed = default;
+  
 
     private float isaacNowTearSpeed = default;
 
     private bool isSomethingCheck = false;
-
+    
 
     private void Awake()
     {
-        GameObject.Find("Body").GetComponent<PlayerController>().playerStat();
-    }
+        GameObject.Find("Isaac").GetComponent<PlayerController>();
+    }   //Awake();
+    
     void Start()
     {
-        // PlayerController.isaacTearSpeed += 0f;
-       
-
-
         isaacTear = GetComponent<Animator>();
         tearRigid = GetComponent<Rigidbody2D>();
-      
-        transform.localScale = new Vector2(PlayerManager.TearSize, PlayerManager.TearSize);
+        isaacCollider2D = GetComponent<CircleCollider2D>();
+        transform.localScale = new Vector2(GameManager.isaacTearSize, GameManager.isaacTearSize);
 
         UpdateTearSpeed();
         isSomethingCheck = false;
@@ -39,52 +40,34 @@ public class Tears : MonoBehaviour
 
     void Update()
     {
-        tearRigid.velocity = transform.up * isaacNowTearSpeed * 10;
-         StartCoroutine(DeathDelay());
-        // if (!isSomethingCheck )
-        // {            
-        // }
+        tearRigid.velocity = transform.up * isaacNowTearSpeed * 1;
+         StartCoroutine(DeathDelay());        
     }
 
-    //!{Shoot R&D
+    
     
     public void DestroyTears()
     {
+
         ObjectPool.ReturnObject(this);
         CancelInvoke();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        
         isSomethingCheck= true;
         tearRigid.velocity = Vector3.zero;
 
-        if (other.tag == "Wall")
+        if (other.tag == "Wall" || other.tag == "Enemy" || other.tag == "Boss")
         {
+            isaacCollider2D.enabled = false;
             tearRigid.velocity = Vector2.zero;
             isaacTear.SetBool("Something", true);
             Invoke("DestroyTears", 0.3f);
-            
-            // DestroyTears();
-            //StartCoroutine("TearDestroy");
-        }
-        if (other.tag == "Enemy")
-        {
-            tearRigid.velocity = Vector2.zero;
-            isaacTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);
-            Debug.Log("??");
-            // DestroyTears();
-            //PlayerController.tearDamage
-        }
-        if (other.tag == "Boss")
-        {
-            tearRigid.velocity = Vector2.zero;
-            isaacTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);
-            Debug.Log("??");
-            // DestroyTears();
-            //PlayerController.tearDamage
+            isSomethingCheck = false;
+
+
         }
         if (other.tag == "TearShadow")
         {
@@ -99,13 +82,14 @@ public class Tears : MonoBehaviour
     public void UpdateTearSpeed()
     {
        
-        isaacNowTearSpeed += PlayerController.isaacTearSpeed;
+        isaacNowTearSpeed += GameManager.isaacTearSpeed;
     }
 
     IEnumerator DeathDelay() 
     {
-        yield return new WaitForSeconds(PlayerController.isaacTime);
-        yield return new WaitForSeconds(PlayerController.isaacRange);
+        
+        
+        yield return new WaitForSeconds(GameManager.isaacRange);
         isaacTear.SetBool("Something", true);
         Invoke("DestroyTears", 0.3f);
     }

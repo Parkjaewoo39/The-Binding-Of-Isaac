@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8919065462936338548}
   - component: {fileID: 8919065462936338549}
   - component: {fileID: 2085150733}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: TraceCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 8919065463170385741}
   - component: {fileID: 8919065463170385742}
   - component: {fileID: 8919065463170385743}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 8919065463811197675}
   - component: {fileID: 8919065463811197668}
   - component: {fileID: 8919065463811197669}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NoAtFly
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 8919065463811197679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.01, y: 0.030000003, z: 0}
-  m_LocalScale: {x: 32, y: 32, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8919065463170385741}
@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735675df7bbe1ac4fbf48234e970065b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 0}
   target: {fileID: 0}
 --- !u!50 &8919065463811197675
 Rigidbody2D:
@@ -374,3 +375,4 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

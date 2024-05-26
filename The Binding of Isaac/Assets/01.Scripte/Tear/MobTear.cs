@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class MobTear : MonoBehaviour
@@ -7,8 +9,8 @@ public class MobTear : MonoBehaviour
     private Rigidbody2D mobTearRigid;
 
     private Animator mobTear = default;
-
-    //private Collider2D mobCollider2D = default;
+    private CircleCollider2D circleCollider;
+    
 
     private float mobTearSpeed = 2.5f;
 
@@ -19,7 +21,7 @@ public class MobTear : MonoBehaviour
        
     void Start()
     {
-        // PlayerController.isaacTearSpeed += 0f;
+        circleCollider = GetComponent<CircleCollider2D>();
         mobTear = GetComponent<Animator>();
         mobTearRigid = GetComponent<Rigidbody2D>();
         
@@ -30,7 +32,8 @@ public class MobTear : MonoBehaviour
     {
         if (!isSomethingCheck)
         {
-            mobTearRigid.velocity = transform.up * mobTearSpeed * 20;            
+            mobTearRigid.velocity = transform.up * mobTearSpeed ;
+            StartCoroutine(DeathDelay());
         }        
     }
 
@@ -42,28 +45,22 @@ public class MobTear : MonoBehaviour
         CancelInvoke();
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollistionEnter2D(Collider2D other)
     {
         isSomethingCheck= true;
         mobTearRigid.velocity = Vector3.zero;
 
-        if (other.tag == "Wall")
+        if (other.CompareTag("Wall") || other.CompareTag("Isaac") || other.CompareTag("Door"))
         {
+            circleCollider.enabled = false;
             mobTearRigid.velocity = Vector2.zero;
             mobTear.SetBool("Something", true);
             Invoke("DestroyTears", 0.3f);
             
-            // DestroyTears();
+            
             //StartCoroutine("TearDestroy");
         }
-        if (other.tag == "Player")
-        {
-            mobTearRigid.velocity = Vector2.zero;
-            mobTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);   
-            // DestroyTears();
-            //PlayerController.tearDamage
-        }
+        
         if (other.tag == "TearShadow")
         {
             mobTear.SetBool("Something", true);
@@ -71,16 +68,16 @@ public class MobTear : MonoBehaviour
 
             DestroyTears();
         }
-        if (other.tag == "Door") 
-        {
-            mobTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);
+        
 
-            DestroyTears();
-        }
+    }
+    IEnumerator DeathDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        mobTear.SetBool("Something", false);
+        Invoke("DestroyTears", 0.3f);
+    }
 
-    }   
 
-    
-    
+
 }

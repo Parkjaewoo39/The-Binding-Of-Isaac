@@ -3,7 +3,8 @@ guid: 7c0a6420c04fb2d428d32eccd0e7a19c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - poolingObjectPrefab: {fileID: 1266462855230759586, guid: de8af9270e197b440857dd06f1c28960, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

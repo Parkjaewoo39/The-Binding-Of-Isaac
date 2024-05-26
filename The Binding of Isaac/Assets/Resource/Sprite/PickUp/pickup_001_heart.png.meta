@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -370,17 +370,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      pickup_001_heart_0: -1349646104
+      pickup_001_heart_1: 175368907
+      pickup_001_heart_10: -149114493
       pickup_001_heart_2: 1309993998
+      pickup_001_heart_3: 1907028429
       pickup_001_heart_4: -1005119907
       pickup_001_heart_5: -1450513955
-      pickup_001_heart_9: -507079481
-      pickup_001_heart_3: 1907028429
+      pickup_001_heart_6: 1098126014
       pickup_001_heart_7: -1830565072
       pickup_001_heart_8: 637067461
-      pickup_001_heart_6: 1098126014
-      pickup_001_heart_1: 175368907
-      pickup_001_heart_0: -1349646104
-      pickup_001_heart_10: -149114493
+      pickup_001_heart_9: -507079481
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

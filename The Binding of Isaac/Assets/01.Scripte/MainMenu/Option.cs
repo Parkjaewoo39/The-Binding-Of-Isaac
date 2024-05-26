@@ -18,9 +18,9 @@ public class Option : MonoBehaviour
     {
         keyDelay = false;
         MusicImage = PlayCheck[0].transform.GetChild(2).GetComponent<Image>();
-        //MusicImage.sprite = volume[GameManager.instance.music - 1];
+        
         sfxImage = PlayCheck[1].transform.GetChild(2).GetComponent<Image>();
-        //sfxImage.sprite = volume[GameManager.instance.sfx - 1];
+        
 
     }
 
@@ -56,92 +56,7 @@ public class Option : MonoBehaviour
             }
 
         }
-        //if (Input.GetKey(KeyCode.RightArrow))
-        //{
-        //    if (PlayCheck[0].interactable)
-        //    {
-        //        if (!keyDelay)
-        //        {
-        //            keyDelay = true;
-        //            if (GameManager.instance.music == 11)
-        //            {
-
-        //            }
-        //            else
-        //            {
-        //                GameManager.instance.music++;
-        //                MusicImage.sprite = volume[GameManager.instance.music - 1];
-
-        //            }
-        //            StartCoroutine(Delaykey());
-
-
-        //        }
-        //    }
-        //    else
-        //    {
-        //        if (!keyDelay)
-        //        {
-        //            keyDelay = true;
-        //            if (GameManager.instance.sfx == 11)
-        //            {
-
-        //            }
-        //            else
-        //            {
-        //                GameManager.instance.sfx++;
-        //                sfxImage.sprite = volume[GameManager.instance.sfx - 1];
-        //            }
-        //            StartCoroutine(Delaykey());
-        //        }
-
-
-        //    }
-        //}
-        //if (Input.GetKey(KeyCode.LeftArrow))
-        //{
-        //    if (PlayCheck[0].interactable)
-        //    {
-        //        if (!keyDelay)
-        //        {
-        //            keyDelay = true;
-        //            if (GameManager.instance.music == 1)
-        //            {
-
-        //            }
-        //            else
-        //            {
-        //                GameManager.instance.music--;
-        //                MusicImage.sprite = volume[GameManager.instance.music - 1];
-
-        //            }
-        //            StartCoroutine(Delaykey());
-
-
-        //        }
-        //    }
-        //    else
-        //    {
-        //        if (!keyDelay)
-        //        {
-        //            keyDelay = true;
-        //            if (GameManager.instance.sfx == 1)
-        //            {
-
-        //            }
-        //            else
-        //            {
-        //                GameManager.instance.sfx--;
-        //                sfxImage.sprite = volume[GameManager.instance.sfx - 1];
-        //            }
-        //            StartCoroutine(Delaykey());
-        //        }
-
-
-        //    }
-
-
-        //}
+       
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             transform.parent.GetComponent<MainMenuController>().isOption = false;
@@ -155,5 +70,12 @@ public class Option : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
         keyDelay = false;
         Debug.Log(keyDelay);
+    }
+    public void Reset()
+    {
+        keyDelay = false;
+        MusicImage = PlayCheck[0].transform.GetChild(2).GetComponent<Image>();
+
+        sfxImage = PlayCheck[1].transform.GetChild(2).GetComponent<Image>();
     }
 }

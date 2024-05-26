@@ -7,6 +7,10 @@ public class IntroSoundController : MonoBehaviour
     public GameObject mainMenu = default;
     AudioSource introSound = default;
     // Start is called before the first frame update
+    private void Awake()
+    {
+       
+    }
     void Start()
     {
         
@@ -36,5 +40,11 @@ public class IntroSoundController : MonoBehaviour
         introSound.Stop();
         gameObject.SetActive(false);
         mainMenu.SetActive(true);
+    }
+    public void Reset()
+    {
+        StartCoroutine(SoundStop());
+        introSound.Stop();
+        this.gameObject.GetComponent<Animator>().enabled = true;
     }
 }

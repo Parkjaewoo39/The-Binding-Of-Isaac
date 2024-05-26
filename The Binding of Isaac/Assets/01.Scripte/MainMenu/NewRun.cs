@@ -23,7 +23,7 @@ public class NewRun : MonoBehaviour
     }
     void InputKey()
     {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (!keyDelay)
             {
@@ -45,7 +45,7 @@ public class NewRun : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("BasementMain");
+            SceneManager.LoadScene("01.BaseMent");
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

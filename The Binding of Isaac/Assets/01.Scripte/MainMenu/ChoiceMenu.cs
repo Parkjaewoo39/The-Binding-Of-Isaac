@@ -50,7 +50,7 @@ public class ChoiceMenu : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (PlayCheck[0].interactable)
             {
@@ -77,12 +77,17 @@ public class ChoiceMenu : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.4f);
         keyDelay = false;
-        Debug.Log(keyDelay);
+        
     }
 
     IEnumerator ActiveReset(Transform tran)
     {
         yield return new WaitForSeconds(0.4f);
         tran.gameObject.SetActive(false);
+    }
+    public void Reset()
+    {
+        keyDelay = false;
+        GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
     }
 }

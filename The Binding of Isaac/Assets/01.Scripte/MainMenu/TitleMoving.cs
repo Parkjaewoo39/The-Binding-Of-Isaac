@@ -42,4 +42,8 @@ public class TitleMoving : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         isMoving = false;
     }
+    public void Reset()
+    {
+        isMoving = false;       
+    }
 }

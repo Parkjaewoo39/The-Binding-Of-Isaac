@@ -11,9 +11,7 @@ public class MobSlowTear : MonoBehaviour
 
    // private Collider2D mobCollider2D = default;
 
-    private float mobTearSpeed = 1.5f;
-
-    private float mobFastTearSpeed = 5f;
+    private float mobTearSpeed = 0.7f;    
 
     private bool isSomethingCheck = false;
 
@@ -31,7 +29,8 @@ public class MobSlowTear : MonoBehaviour
     {
         if (!isSomethingCheck)
         {
-            mobTearRigid.velocity = transform.up * mobTearSpeed * 20;            
+            mobTearRigid.velocity = transform.up * mobTearSpeed ;
+            StartCoroutine(DeathDelay());
         }
         
     }
@@ -44,38 +43,30 @@ public class MobSlowTear : MonoBehaviour
         CancelInvoke();
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollionEnter2D(Collider2D other)
     {
         isSomethingCheck= true;
         mobTearRigid.velocity = Vector3.zero;
 
-        if (other.tag == "Wall")
+        if (other.CompareTag("Wall") || other.CompareTag("Isaac") || other.CompareTag("Door"))
         {
             mobTearRigid.velocity = Vector2.zero;
             mobTear.SetBool("Something", true);
             Invoke("DestroyTears", 0.3f);
-            
-            // DestroyTears();
+
+
             //StartCoroutine("TearDestroy");
         }
-        if (other.tag == "Player")
-        {
-            mobTearRigid.velocity = Vector2.zero;
-            mobTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);   
-            // DestroyTears();
-            //PlayerController.tearDamage
-        }
-        if (other.tag == "TearShadow")
-        {
-            mobTear.SetBool("Something", true);
-            Invoke("DestroyTears", 0.3f);
 
-            DestroyTears();
-        }
+    }
+    IEnumerator DeathDelay()
+    {
+       
 
-    }   
+        yield return new WaitForSeconds(3f);
+        mobTear.SetBool("Something", false);
+        Invoke("DestroyTears", 0.3f);
+    }
 
-    
-    
+
 }

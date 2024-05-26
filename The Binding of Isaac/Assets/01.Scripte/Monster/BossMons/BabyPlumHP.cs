@@ -8,6 +8,7 @@ public class BabyPlumHP : MonoBehaviour
 {
 
     public GameObject hpContainer;
+    public GameObject uiParnet;
     public Image hpbar;
     public float fillValue;
     public float maxHp;
@@ -15,20 +16,35 @@ public class BabyPlumHP : MonoBehaviour
 
     void Update()
     {
-        BabyPlumHp();
+        if (0 < currenthp )
+        {
+            BabyPlumHp();
+        }
+
     }
     // Start is called before the first frame update
     void Start()
     {
-        currenthp = BabyPlum1.babyPlumHp;
-        maxHp = BabyPlum1.babyPlumHp;
+
+        currenthp = BabyPlum.babyPlumHp;
+        maxHp = BabyPlum.babyPlumHp;
     }
 
     public void BabyPlumHp()
     {
-        fillValue = (float)BabyPlum1.babyPlumHp;
+        fillValue = (float)BabyPlum.babyPlumHp;
         fillValue = fillValue / maxHp;
+
         hpContainer.GetComponent<Image>().fillAmount = fillValue;
     }
 
+    public void BossHpUiActiveTrue() 
+    {
+        uiParnet.SetActive(true);
+    }
+
+    public void BossHpUiAcitveFalse() 
+    {
+        uiParnet.SetActive(false);
+    }
 }

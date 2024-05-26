@@ -4,26 +4,30 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class AtFly : MonoBehaviour
+public class AtFly : MonoBehaviour, IEnemy
 {
+    Room room;
+    public PickUp pickUp;
     private Animator AtFlyAni = default;
     private Rigidbody2D AtFlyRigid = default;
 
     public Transform target;
 
     private float AtFlyHp = 3f;
-    public static float AtFlySpeed = 10f;
+    public static float AtFlySpeed = 1f;
 
     private bool isTargetCheck = false;
     Vector2 vec;
 
     void Start()
     {
+        
+        pickUp = FindObjectOfType<PickUp>();
         gameObject.SetActive(true);
         AtFlyAni = gameObject.GetComponentMust<Animator>();
         AtFlyRigid = gameObject.GetComponentMust<Rigidbody2D>();
         target = FindObjectOfType<PlayerController>().transform;
-        
+        room = GetComponentInParent<Room>();
         StartCoroutine("mobMove");
     }
 
@@ -71,7 +75,7 @@ public class AtFly : MonoBehaviour
     {
         if (other.tag == "Tear")
         {
-            Hit();
+            Hit(GameManager.Instance.IsaacDamage);
             //Debug.Log($"{noAtFlyHp}");
         }
     }
@@ -86,9 +90,9 @@ public class AtFly : MonoBehaviour
 
 
     //!{Hit()
-    public void Hit()
+    public void Hit(float _float)
     {
-        AtFlyHp -= PlayerController.isaacDamage;
+        AtFlyHp -= _float ;
 
         if (0 < AtFlyHp)
         {
@@ -104,18 +108,19 @@ public class AtFly : MonoBehaviour
     //!{Die()
     public void Die()
     {
+        
         AtFlyAni.SetBool("Die", true);
         Invoke("DestroyMob", 0.3f);
-
-
+        PickUpDrop();
+        if (room != null) 
+        {
+            room.MobDie();
+        }
         
     }   //Did()
 
     //private void Distroy()
-    //{
-    //    Object.Destroy(this);
-
-    //}   //Distroy()
+   
 
     public void DestroyMob()
     {        
@@ -127,6 +132,34 @@ public class AtFly : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > 1 && isTargetCheck)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, AtFlySpeed);
+        }
+    }
+
+    private void PickUpDrop() 
+    {
+        Vector3 position = transform.position;
+        GameObject mob = this.gameObject;
+        int index = Random.Range(0, 6);
+        switch (index) 
+        {
+            case 0: 
+                pickUp.KeyDrop(mob,position);
+                break;
+            case 1:
+                pickUp.CoinDrop(mob, position);
+                break;
+            case 2:
+                pickUp.BombDrop(mob,position); 
+                break;
+            case 3:
+                pickUp.HeartOneDrop(mob,position);
+                break;
+            case 4:
+                pickUp.HeartHalfDrop(mob, position);
+                break;
+            default:
+                break;
+              
         }
     }
 
