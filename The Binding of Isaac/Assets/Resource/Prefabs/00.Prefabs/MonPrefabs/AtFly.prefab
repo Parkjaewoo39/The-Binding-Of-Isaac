@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 1780791696996177727}
   - component: {fileID: 1780791696996177726}
   - component: {fileID: 1780791696996177725}
+<<<<<<< HEAD
   m_Layer: 7
+=======
+  m_Layer: 9
+>>>>>>> Develop
   m_Name: TraceCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +111,12 @@ GameObject:
   - component: {fileID: 1780791697597797884}
   - component: {fileID: 1780791697597797633}
   - component: {fileID: 1780791697597797634}
+<<<<<<< HEAD
   m_Layer: 0
+=======
+  - component: {fileID: 3367529308804178792}
+  m_Layer: 9
+>>>>>>> Develop
   m_Name: AtFly
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -122,9 +131,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780791697597797882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -17.27774, y: 1.5132003, z: 0}
   m_LocalScale: {x: 34.21335, y: 34.21335, z: 17.10668}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Develop
   m_Children:
   - {fileID: 1780791697642576300}
   - {fileID: 1780791696996177724}
@@ -250,6 +265,10 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+<<<<<<< HEAD
+=======
+  m_WriteDefaultValuesOnDisable: 0
+>>>>>>> Develop
 --- !u!114 &1780791697597797634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +281,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9a909a56643234f8f03a112d5727a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   target: {fileID: 0}
+=======
+  pickUp: {fileID: 0}
+  target: {fileID: 6540063422700893097, guid: 9dcb389f0d786a0459467952371a2bd0, type: 3}
+--- !u!61 &3367529308804178792
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780791697597797882}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
+>>>>>>> Develop
 --- !u!1 &1780791697642576299
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +324,11 @@ GameObject:
   - component: {fileID: 1780791697642576300}
   - component: {fileID: 1780791697642576302}
   - component: {fileID: 1780791697642576301}
+<<<<<<< HEAD
   m_Layer: 0
+=======
+  m_Layer: 9
+>>>>>>> Develop
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

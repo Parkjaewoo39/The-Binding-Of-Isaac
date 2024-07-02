@@ -49,12 +49,23 @@ public class ChoiceMenu : MonoBehaviour
             }
 
         }
+<<<<<<< HEAD
 
         if (Input.GetKeyDown(KeyCode.Return))
+=======
+        else { }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+>>>>>>> Develop
         {
             if (PlayCheck[0].interactable)
             {
                 transform.parent.GetComponent<MainMenuController>().isNewRun = true;
+<<<<<<< HEAD
+=======
+                transform.parent.GetComponent<MainMenuController>().isNewRunChange = true;
+
+>>>>>>> Develop
             }
             else
             {
@@ -75,7 +86,11 @@ public class ChoiceMenu : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.4f);
         keyDelay = false;
+<<<<<<< HEAD
         Debug.Log(keyDelay);
+=======
+        
+>>>>>>> Develop
     }
 
     IEnumerator ActiveReset(Transform tran)
@@ -83,4 +98,12 @@ public class ChoiceMenu : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         tran.gameObject.SetActive(false);
     }
+<<<<<<< HEAD
+=======
+    public void Reset()
+    {
+        keyDelay = false;
+        GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+    }
+>>>>>>> Develop
 }

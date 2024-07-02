@@ -125,6 +125,21 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Develop
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1442,6 +1457,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       1_Stage_Base_0: 751200711
+<<<<<<< HEAD
       1_Stage_Base_3: 1690244330
       1_Stage_Base_30: 1617368504
       1_Stage_Base_48: -1397947110
@@ -1503,6 +1519,69 @@ TextureImporter:
       1_Stage_Base_44: -497878247
       1_Stage_Base_21: 839540059
       1_Stage_Base_23: -700443023
+=======
+      1_Stage_Base_1: 318380945
+      1_Stage_Base_10: -521208112
+      1_Stage_Base_11: -2097967193
+      1_Stage_Base_12: 232431265
+      1_Stage_Base_13: 1955692096
+      1_Stage_Base_14: -1032268193
+      1_Stage_Base_15: -66308079
+      1_Stage_Base_16: -807678299
+      1_Stage_Base_17: 1948270840
+      1_Stage_Base_18: 1670615279
+      1_Stage_Base_19: -1261632126
+      1_Stage_Base_2: 313426670
+      1_Stage_Base_20: -242555189
+      1_Stage_Base_21: 839540059
+      1_Stage_Base_22: -1807020429
+      1_Stage_Base_23: -700443023
+      1_Stage_Base_24: -1527616107
+      1_Stage_Base_25: -129612523
+      1_Stage_Base_26: 1474336409
+      1_Stage_Base_27: -734072951
+      1_Stage_Base_28: 34955830
+      1_Stage_Base_29: -812407115
+      1_Stage_Base_3: 1690244330
+      1_Stage_Base_30: 1617368504
+      1_Stage_Base_31: 1585895783
+      1_Stage_Base_32: -1214832250
+      1_Stage_Base_33: -2049925477
+      1_Stage_Base_34: -868627608
+      1_Stage_Base_35: -1086815126
+      1_Stage_Base_36: -1960531146
+      1_Stage_Base_37: -1769983688
+      1_Stage_Base_38: -821670955
+      1_Stage_Base_39: 250445847
+      1_Stage_Base_4: 1780818268
+      1_Stage_Base_40: 754824091
+      1_Stage_Base_41: 141706748
+      1_Stage_Base_42: 367008796
+      1_Stage_Base_43: -1111663537
+      1_Stage_Base_44: -497878247
+      1_Stage_Base_45: -2129159141
+      1_Stage_Base_46: 256570953
+      1_Stage_Base_47: -1867301251
+      1_Stage_Base_48: -1397947110
+      1_Stage_Base_49: -673301933
+      1_Stage_Base_5: 1266207961
+      1_Stage_Base_50: 1275767492
+      1_Stage_Base_51: -1183492533
+      1_Stage_Base_52: 553903206
+      1_Stage_Base_53: 503841651
+      1_Stage_Base_54: -1631306361
+      1_Stage_Base_55: 1958452786
+      1_Stage_Base_56: 1073021756
+      1_Stage_Base_57: 495571272
+      1_Stage_Base_58: 708540303
+      1_Stage_Base_59: -1453988669
+      1_Stage_Base_6: -2113373239
+      1_Stage_Base_60: -1224445097
+      1_Stage_Base_61: 1335419190
+      1_Stage_Base_7: 1762814358
+      1_Stage_Base_8: 914885932
+      1_Stage_Base_9: 816580852
+>>>>>>> Develop
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

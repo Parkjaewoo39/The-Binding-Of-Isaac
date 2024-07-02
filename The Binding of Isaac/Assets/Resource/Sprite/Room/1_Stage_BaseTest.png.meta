@@ -33,7 +33,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> Develop
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -47,7 +51,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 20
+>>>>>>> Develop
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,6 +133,21 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Develop
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -137,7 +160,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +185,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +210,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +235,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,6 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_4
       rect:
         serializedVersion: 2
@@ -238,11 +278,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 255
+=======
+      name: 1_Stage_BaseTest_5
+      rect:
+        serializedVersion: 2
+        x: 240
+>>>>>>> Develop
         y: 413
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +308,20 @@ TextureImporter:
       name: 1_Stage_BaseTest_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 305
+=======
+        x: 290
+>>>>>>> Develop
         y: 413
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +337,20 @@ TextureImporter:
       name: 1_Stage_BaseTest_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 355
+=======
+        x: 340
+>>>>>>> Develop
         y: 413
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +366,21 @@ TextureImporter:
       name: 1_Stage_BaseTest_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 405
         y: 413
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 390
+        y: 414
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,6 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_9
       rect:
         serializedVersion: 2
@@ -339,6 +415,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_10
       rect:
         serializedVersion: 2
@@ -347,7 +425,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +450,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,7 +475,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +500,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,7 +525,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +550,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,7 +575,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,7 +600,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -515,7 +625,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,7 +650,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -557,7 +675,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,7 +700,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -599,7 +725,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -620,7 +750,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -641,7 +775,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -662,7 +800,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -683,7 +825,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -704,7 +850,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -717,6 +867,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_28
       rect:
         serializedVersion: 2
@@ -742,11 +893,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 255
+=======
+      name: 1_Stage_BaseTest_29
+      rect:
+        serializedVersion: 2
+        x: 240
+>>>>>>> Develop
         y: 363
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -759,6 +920,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_30
       rect:
         serializedVersion: 2
@@ -843,6 +1005,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_34
       rect:
         serializedVersion: 2
@@ -851,7 +1015,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -872,7 +1040,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -893,7 +1065,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -914,7 +1090,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -935,7 +1115,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -956,7 +1140,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -977,7 +1165,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -998,7 +1190,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1019,7 +1215,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,7 +1240,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1061,7 +1265,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,7 +1290,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1103,7 +1315,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,7 +1340,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1145,7 +1365,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1166,7 +1390,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1187,7 +1415,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1208,7 +1440,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1229,7 +1465,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1250,7 +1490,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1271,7 +1515,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,7 +1540,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1313,7 +1565,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1334,7 +1590,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1355,7 +1615,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1376,7 +1640,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1397,7 +1665,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1418,7 +1690,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1439,7 +1715,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1460,7 +1740,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1473,6 +1757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_64
       rect:
         serializedVersion: 2
@@ -1498,11 +1783,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 255
+=======
+      name: 1_Stage_BaseTest_65
+      rect:
+        serializedVersion: 2
+        x: 240
+>>>>>>> Develop
         y: 313
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1515,6 +1810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_66
       rect:
         serializedVersion: 2
@@ -1704,6 +2000,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_75
       rect:
         serializedVersion: 2
@@ -1712,7 +2010,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1733,7 +2035,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1754,7 +2060,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1775,7 +2085,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1796,7 +2110,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1817,7 +2135,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1838,7 +2160,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1859,7 +2185,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1880,7 +2210,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1901,7 +2235,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1922,7 +2260,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1943,7 +2285,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1964,7 +2310,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1985,7 +2335,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2006,7 +2360,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2027,7 +2385,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2048,7 +2410,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2069,7 +2435,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2090,7 +2460,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2111,7 +2485,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2132,7 +2510,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2153,7 +2535,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2174,7 +2560,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2195,7 +2585,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2211,12 +2605,21 @@ TextureImporter:
       name: 1_Stage_BaseTest_99
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 205
         y: 263
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 239
+        y: 258
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2232,12 +2635,21 @@ TextureImporter:
       name: 1_Stage_BaseTest_100
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 255
         y: 263
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 289
+        y: 258
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2253,12 +2665,21 @@ TextureImporter:
       name: 1_Stage_BaseTest_101
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 305
         y: 263
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 339
+        y: 258
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2274,12 +2695,21 @@ TextureImporter:
       name: 1_Stage_BaseTest_102
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 355
         y: 263
         width: 50
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 389
+        y: 258
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2292,6 +2722,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_103
       rect:
         serializedVersion: 2
@@ -2334,6 +2765,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_105
       rect:
         serializedVersion: 2
@@ -2342,7 +2775,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2363,7 +2800,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2384,7 +2825,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2405,7 +2850,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2418,6 +2867,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_109
       rect:
         serializedVersion: 2
@@ -2439,6 +2889,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_110
       rect:
         serializedVersion: 2
@@ -2447,7 +2899,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2468,7 +2924,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2489,7 +2949,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2510,7 +2974,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2531,7 +2999,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2552,7 +3024,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2573,7 +3049,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2594,7 +3074,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2615,7 +3099,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2636,7 +3124,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2657,7 +3149,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2678,7 +3174,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2699,7 +3199,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2720,7 +3224,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2741,7 +3249,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2762,7 +3274,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2783,7 +3299,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2804,7 +3324,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2825,7 +3349,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2846,7 +3374,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2867,7 +3399,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2888,7 +3424,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2909,7 +3449,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2930,7 +3474,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2943,6 +3491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_134
       rect:
         serializedVersion: 2
@@ -3069,6 +3618,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_140
       rect:
         serializedVersion: 2
@@ -3077,7 +3628,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3098,7 +3653,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3119,7 +3678,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3140,7 +3703,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3153,6 +3720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_144
       rect:
         serializedVersion: 2
@@ -3174,6 +3742,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_145
       rect:
         serializedVersion: 2
@@ -3182,7 +3752,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3203,7 +3777,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3224,7 +3802,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3245,7 +3827,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3266,7 +3852,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3287,7 +3877,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3308,7 +3902,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3329,7 +3927,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3350,7 +3952,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3371,7 +3977,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3392,7 +4002,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3413,7 +4027,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3434,7 +4052,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3455,7 +4077,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3476,7 +4102,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3497,7 +4127,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3518,7 +4152,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3539,7 +4177,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3560,7 +4202,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3581,7 +4227,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3602,7 +4252,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3623,7 +4277,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3644,7 +4302,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3665,7 +4327,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3678,6 +4344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_169
       rect:
         serializedVersion: 2
@@ -3804,6 +4471,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_175
       rect:
         serializedVersion: 2
@@ -3812,7 +4481,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3833,7 +4506,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3854,7 +4531,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3875,7 +4556,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3888,6 +4573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_179
       rect:
         serializedVersion: 2
@@ -3909,6 +4595,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_180
       rect:
         serializedVersion: 2
@@ -3917,7 +4605,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3938,7 +4630,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3959,7 +4655,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3980,7 +4680,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4001,7 +4705,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4022,7 +4730,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4043,7 +4755,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4064,7 +4780,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4085,7 +4805,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4106,7 +4830,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4127,7 +4855,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4148,7 +4880,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4169,7 +4905,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4190,7 +4930,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4211,7 +4955,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4232,7 +4980,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4253,7 +5005,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4274,7 +5030,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4295,7 +5055,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4316,7 +5080,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4329,6 +5097,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_200
       rect:
         serializedVersion: 2
@@ -4539,6 +5308,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_210
       rect:
         serializedVersion: 2
@@ -4547,7 +5318,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4568,7 +5343,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4589,7 +5368,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4610,7 +5393,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4631,7 +5418,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4652,7 +5443,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4673,7 +5468,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4694,7 +5493,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4715,7 +5518,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4736,7 +5543,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4757,7 +5568,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4778,7 +5593,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4799,7 +5618,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4820,7 +5643,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4841,7 +5668,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4862,7 +5693,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4883,7 +5718,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4904,7 +5743,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4925,7 +5768,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4946,7 +5793,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4967,7 +5818,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4988,7 +5843,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5009,7 +5868,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5030,7 +5893,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5051,7 +5918,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5072,7 +5943,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5085,6 +5960,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_236
       rect:
         serializedVersion: 2
@@ -5316,6 +6192,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_247
       rect:
         serializedVersion: 2
@@ -5324,7 +6202,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5345,7 +6227,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5366,7 +6252,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5387,7 +6277,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5408,7 +6302,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5429,7 +6327,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5450,7 +6352,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5471,7 +6377,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5492,7 +6402,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5513,7 +6427,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5534,7 +6452,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5555,7 +6477,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5576,7 +6502,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5597,7 +6527,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5618,7 +6552,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5639,7 +6577,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5660,7 +6602,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5681,7 +6627,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5702,7 +6652,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5723,7 +6677,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5744,7 +6702,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5765,7 +6727,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5786,7 +6752,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5807,7 +6777,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5828,7 +6802,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5841,6 +6819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 1_Stage_BaseTest_272
       rect:
         serializedVersion: 2
@@ -6072,6 +7051,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> Develop
       name: 1_Stage_BaseTest_283
       rect:
         serializedVersion: 2
@@ -6080,7 +7061,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6101,7 +7086,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6122,7 +7111,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6143,7 +7136,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6164,7 +7161,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6185,7 +7186,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6206,7 +7211,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6227,7 +7236,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6248,7 +7261,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6269,7 +7286,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6290,7 +7311,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6311,7 +7336,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6332,7 +7361,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6353,7 +7386,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6374,7 +7411,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6395,7 +7436,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6416,7 +7461,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6437,7 +7486,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6458,7 +7511,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6479,7 +7536,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6500,7 +7561,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6521,7 +7586,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6542,7 +7611,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6563,7 +7636,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6584,7 +7661,11 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Develop
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6607,6 +7688,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       1_Stage_BaseTest_187: -1361728864
       1_Stage_BaseTest_88: -939235184
       1_Stage_BaseTest_189: 811434794
@@ -6915,6 +7997,316 @@ TextureImporter:
       1_Stage_BaseTest_27: -1956933923
       1_Stage_BaseTest_177: -1533543626
       1_Stage_BaseTest_31: 1915221395
+=======
+      1_Stage_BaseTest_0: 1395035693
+      1_Stage_BaseTest_1: -2006070519
+      1_Stage_BaseTest_10: 1823786039
+      1_Stage_BaseTest_100: -1240044573
+      1_Stage_BaseTest_101: -1685016890
+      1_Stage_BaseTest_102: 425711439
+      1_Stage_BaseTest_103: -2119003175
+      1_Stage_BaseTest_104: -1329654028
+      1_Stage_BaseTest_105: 298522036
+      1_Stage_BaseTest_106: 421030398
+      1_Stage_BaseTest_107: -103621520
+      1_Stage_BaseTest_108: 1321654515
+      1_Stage_BaseTest_109: -1788753801
+      1_Stage_BaseTest_11: -1660496511
+      1_Stage_BaseTest_110: 1315095773
+      1_Stage_BaseTest_111: 1579209092
+      1_Stage_BaseTest_112: -988534449
+      1_Stage_BaseTest_113: -1865185397
+      1_Stage_BaseTest_114: -1068369184
+      1_Stage_BaseTest_115: 802973191
+      1_Stage_BaseTest_116: 342499837
+      1_Stage_BaseTest_117: -208436444
+      1_Stage_BaseTest_118: -2125314619
+      1_Stage_BaseTest_119: -53210169
+      1_Stage_BaseTest_12: 514478827
+      1_Stage_BaseTest_120: -1908642936
+      1_Stage_BaseTest_121: 465574681
+      1_Stage_BaseTest_122: 541815832
+      1_Stage_BaseTest_123: 1416089216
+      1_Stage_BaseTest_124: 787619658
+      1_Stage_BaseTest_125: 751597717
+      1_Stage_BaseTest_126: 1243768132
+      1_Stage_BaseTest_127: 959493796
+      1_Stage_BaseTest_128: 520492995
+      1_Stage_BaseTest_129: 181745481
+      1_Stage_BaseTest_13: -1097144842
+      1_Stage_BaseTest_130: -1490300077
+      1_Stage_BaseTest_131: 1368828253
+      1_Stage_BaseTest_132: 338892039
+      1_Stage_BaseTest_133: -1456531556
+      1_Stage_BaseTest_134: -105920258
+      1_Stage_BaseTest_135: 1125503520
+      1_Stage_BaseTest_136: -1364693639
+      1_Stage_BaseTest_137: -499173616
+      1_Stage_BaseTest_138: 1754516440
+      1_Stage_BaseTest_139: -2000875213
+      1_Stage_BaseTest_14: -352704299
+      1_Stage_BaseTest_140: 390311701
+      1_Stage_BaseTest_141: 1395143403
+      1_Stage_BaseTest_142: 1796689351
+      1_Stage_BaseTest_143: 505766116
+      1_Stage_BaseTest_144: 538572784
+      1_Stage_BaseTest_145: 810951556
+      1_Stage_BaseTest_146: -794889951
+      1_Stage_BaseTest_147: 376988449
+      1_Stage_BaseTest_148: -1606968610
+      1_Stage_BaseTest_149: 1178266250
+      1_Stage_BaseTest_15: -758269699
+      1_Stage_BaseTest_150: 936353866
+      1_Stage_BaseTest_151: -49527087
+      1_Stage_BaseTest_152: 471724088
+      1_Stage_BaseTest_153: 1740649512
+      1_Stage_BaseTest_154: -884015291
+      1_Stage_BaseTest_155: 576822740
+      1_Stage_BaseTest_156: 2131770423
+      1_Stage_BaseTest_157: 1667029369
+      1_Stage_BaseTest_158: 834478932
+      1_Stage_BaseTest_159: 560766962
+      1_Stage_BaseTest_16: 789790144
+      1_Stage_BaseTest_160: 174257236
+      1_Stage_BaseTest_161: -1584291685
+      1_Stage_BaseTest_162: -1854017641
+      1_Stage_BaseTest_163: 1881721862
+      1_Stage_BaseTest_164: 1492885954
+      1_Stage_BaseTest_165: -235574502
+      1_Stage_BaseTest_166: 90378016
+      1_Stage_BaseTest_167: -1495047859
+      1_Stage_BaseTest_168: 1281274001
+      1_Stage_BaseTest_169: 1976384699
+      1_Stage_BaseTest_17: -1782747519
+      1_Stage_BaseTest_170: -2081609390
+      1_Stage_BaseTest_171: -1144204426
+      1_Stage_BaseTest_172: -1763605281
+      1_Stage_BaseTest_173: -1700590183
+      1_Stage_BaseTest_174: 446700595
+      1_Stage_BaseTest_175: -872981982
+      1_Stage_BaseTest_176: -512617325
+      1_Stage_BaseTest_177: -1533543626
+      1_Stage_BaseTest_178: -2110140891
+      1_Stage_BaseTest_179: 1692685010
+      1_Stage_BaseTest_18: 857715735
+      1_Stage_BaseTest_180: 1474734060
+      1_Stage_BaseTest_181: 605779104
+      1_Stage_BaseTest_182: 1196842679
+      1_Stage_BaseTest_183: 124118356
+      1_Stage_BaseTest_184: -2049765018
+      1_Stage_BaseTest_185: 562968124
+      1_Stage_BaseTest_186: 531360745
+      1_Stage_BaseTest_187: -1361728864
+      1_Stage_BaseTest_188: -1223151995
+      1_Stage_BaseTest_189: 811434794
+      1_Stage_BaseTest_19: -1122488887
+      1_Stage_BaseTest_190: 114698412
+      1_Stage_BaseTest_191: -1985977776
+      1_Stage_BaseTest_192: -394397727
+      1_Stage_BaseTest_193: 1203768312
+      1_Stage_BaseTest_194: 1534719985
+      1_Stage_BaseTest_195: 1933343359
+      1_Stage_BaseTest_196: 576681998
+      1_Stage_BaseTest_197: 1496738643
+      1_Stage_BaseTest_198: -1653314916
+      1_Stage_BaseTest_199: -655210078
+      1_Stage_BaseTest_2: -656302848
+      1_Stage_BaseTest_20: 1358689705
+      1_Stage_BaseTest_200: 1549592989
+      1_Stage_BaseTest_201: -821004959
+      1_Stage_BaseTest_202: 877855184
+      1_Stage_BaseTest_203: -1922612520
+      1_Stage_BaseTest_204: -937960227
+      1_Stage_BaseTest_205: -1144834134
+      1_Stage_BaseTest_206: -1480246668
+      1_Stage_BaseTest_207: 22671186
+      1_Stage_BaseTest_208: -1719287240
+      1_Stage_BaseTest_209: 979528260
+      1_Stage_BaseTest_21: 56153440
+      1_Stage_BaseTest_210: 1253138293
+      1_Stage_BaseTest_211: 493664614
+      1_Stage_BaseTest_212: -70544681
+      1_Stage_BaseTest_213: 108704391
+      1_Stage_BaseTest_214: 729676581
+      1_Stage_BaseTest_215: 2145295152
+      1_Stage_BaseTest_216: -1303659266
+      1_Stage_BaseTest_217: -1107131885
+      1_Stage_BaseTest_218: 102613372
+      1_Stage_BaseTest_219: -1264519259
+      1_Stage_BaseTest_22: -898706305
+      1_Stage_BaseTest_220: -357446778
+      1_Stage_BaseTest_221: 2128217523
+      1_Stage_BaseTest_222: 2094235913
+      1_Stage_BaseTest_223: -696101497
+      1_Stage_BaseTest_224: -1426211855
+      1_Stage_BaseTest_225: -1539234772
+      1_Stage_BaseTest_226: 2036533336
+      1_Stage_BaseTest_227: 525188069
+      1_Stage_BaseTest_228: 64446046
+      1_Stage_BaseTest_229: 200040210
+      1_Stage_BaseTest_23: 934189907
+      1_Stage_BaseTest_230: 683652410
+      1_Stage_BaseTest_231: 1851169684
+      1_Stage_BaseTest_232: -513414914
+      1_Stage_BaseTest_233: 1724230701
+      1_Stage_BaseTest_234: -570117138
+      1_Stage_BaseTest_235: 963965810
+      1_Stage_BaseTest_236: 495785531
+      1_Stage_BaseTest_237: -2057716427
+      1_Stage_BaseTest_238: 1595875123
+      1_Stage_BaseTest_239: -76258152
+      1_Stage_BaseTest_24: 1982923314
+      1_Stage_BaseTest_240: 1507575112
+      1_Stage_BaseTest_241: -492931364
+      1_Stage_BaseTest_242: 847189201
+      1_Stage_BaseTest_243: 271957844
+      1_Stage_BaseTest_244: -1580298761
+      1_Stage_BaseTest_245: 75392173
+      1_Stage_BaseTest_246: 1443642897
+      1_Stage_BaseTest_247: 2008072027
+      1_Stage_BaseTest_248: -64466969
+      1_Stage_BaseTest_249: -764973745
+      1_Stage_BaseTest_25: -414753540
+      1_Stage_BaseTest_250: 191122002
+      1_Stage_BaseTest_251: 1547567821
+      1_Stage_BaseTest_252: -2098728620
+      1_Stage_BaseTest_253: -821636507
+      1_Stage_BaseTest_254: 948670164
+      1_Stage_BaseTest_255: 492773088
+      1_Stage_BaseTest_256: 1637058332
+      1_Stage_BaseTest_257: -50193494
+      1_Stage_BaseTest_258: 605486952
+      1_Stage_BaseTest_259: -1059299132
+      1_Stage_BaseTest_26: 1238967297
+      1_Stage_BaseTest_260: 480045947
+      1_Stage_BaseTest_261: -372421142
+      1_Stage_BaseTest_262: -1979415457
+      1_Stage_BaseTest_263: 61534252
+      1_Stage_BaseTest_264: -521770191
+      1_Stage_BaseTest_265: 59347039
+      1_Stage_BaseTest_266: 1035021289
+      1_Stage_BaseTest_267: -413726252
+      1_Stage_BaseTest_268: -724624143
+      1_Stage_BaseTest_269: 73197082
+      1_Stage_BaseTest_27: -1956933923
+      1_Stage_BaseTest_270: -1722653117
+      1_Stage_BaseTest_271: 1330828362
+      1_Stage_BaseTest_272: 363354860
+      1_Stage_BaseTest_273: 1208258087
+      1_Stage_BaseTest_274: -1777895378
+      1_Stage_BaseTest_275: 513205880
+      1_Stage_BaseTest_276: -1451743013
+      1_Stage_BaseTest_277: 825551437
+      1_Stage_BaseTest_278: 830729968
+      1_Stage_BaseTest_279: -1028883817
+      1_Stage_BaseTest_28: 1178224966
+      1_Stage_BaseTest_280: -2135740314
+      1_Stage_BaseTest_281: -263680386
+      1_Stage_BaseTest_282: 1579521807
+      1_Stage_BaseTest_283: -1389392869
+      1_Stage_BaseTest_284: -1122780228
+      1_Stage_BaseTest_285: -1960756984
+      1_Stage_BaseTest_286: -1909819152
+      1_Stage_BaseTest_287: 83158038
+      1_Stage_BaseTest_288: 779254492
+      1_Stage_BaseTest_289: 1884136702
+      1_Stage_BaseTest_29: 2058038717
+      1_Stage_BaseTest_290: 1026438571
+      1_Stage_BaseTest_291: -231249313
+      1_Stage_BaseTest_292: 310558279
+      1_Stage_BaseTest_293: -19481892
+      1_Stage_BaseTest_294: -46865735
+      1_Stage_BaseTest_295: -1903772705
+      1_Stage_BaseTest_296: -455096552
+      1_Stage_BaseTest_297: 2069045808
+      1_Stage_BaseTest_298: -864994638
+      1_Stage_BaseTest_299: -1952118034
+      1_Stage_BaseTest_3: 1239924135
+      1_Stage_BaseTest_30: 370795620
+      1_Stage_BaseTest_300: 1742582537
+      1_Stage_BaseTest_301: 1180533632
+      1_Stage_BaseTest_302: -65224887
+      1_Stage_BaseTest_303: -2114289279
+      1_Stage_BaseTest_304: -313961217
+      1_Stage_BaseTest_305: 1029711636
+      1_Stage_BaseTest_306: -363644976
+      1_Stage_BaseTest_307: -1398347703
+      1_Stage_BaseTest_31: 1915221395
+      1_Stage_BaseTest_32: -78732903
+      1_Stage_BaseTest_33: 174642244
+      1_Stage_BaseTest_34: 1286431054
+      1_Stage_BaseTest_35: -2047520195
+      1_Stage_BaseTest_36: 1264911530
+      1_Stage_BaseTest_37: 151455816
+      1_Stage_BaseTest_38: -1780540043
+      1_Stage_BaseTest_39: 1354739104
+      1_Stage_BaseTest_4: -3969823
+      1_Stage_BaseTest_40: -1418237219
+      1_Stage_BaseTest_41: -1225526359
+      1_Stage_BaseTest_42: -253131486
+      1_Stage_BaseTest_43: -1332090055
+      1_Stage_BaseTest_44: -1798728072
+      1_Stage_BaseTest_45: 1823131320
+      1_Stage_BaseTest_46: 2095450845
+      1_Stage_BaseTest_47: 478573570
+      1_Stage_BaseTest_48: 987381062
+      1_Stage_BaseTest_49: 680173957
+      1_Stage_BaseTest_5: 178511120
+      1_Stage_BaseTest_50: 839063482
+      1_Stage_BaseTest_51: 1993391158
+      1_Stage_BaseTest_52: -1481152450
+      1_Stage_BaseTest_53: 799666185
+      1_Stage_BaseTest_54: -458922641
+      1_Stage_BaseTest_55: -2087746857
+      1_Stage_BaseTest_56: 1778992563
+      1_Stage_BaseTest_57: 1101559587
+      1_Stage_BaseTest_58: -1652123499
+      1_Stage_BaseTest_59: -1044014579
+      1_Stage_BaseTest_6: -1281981868
+      1_Stage_BaseTest_60: 2099777317
+      1_Stage_BaseTest_61: -858329462
+      1_Stage_BaseTest_62: -215605986
+      1_Stage_BaseTest_63: 509208213
+      1_Stage_BaseTest_64: -1067713311
+      1_Stage_BaseTest_65: -943344584
+      1_Stage_BaseTest_66: -1147292059
+      1_Stage_BaseTest_67: -111542187
+      1_Stage_BaseTest_68: 1455007585
+      1_Stage_BaseTest_69: -1201770556
+      1_Stage_BaseTest_7: 1893701178
+      1_Stage_BaseTest_70: -881789866
+      1_Stage_BaseTest_71: 674458810
+      1_Stage_BaseTest_72: -680970592
+      1_Stage_BaseTest_73: -340903848
+      1_Stage_BaseTest_74: 376129390
+      1_Stage_BaseTest_75: -40786141
+      1_Stage_BaseTest_76: -1261204976
+      1_Stage_BaseTest_77: 928869582
+      1_Stage_BaseTest_78: 594718295
+      1_Stage_BaseTest_79: -2078454243
+      1_Stage_BaseTest_8: -774836287
+      1_Stage_BaseTest_80: 777544088
+      1_Stage_BaseTest_81: 954851894
+      1_Stage_BaseTest_82: 1680599621
+      1_Stage_BaseTest_83: 1386792211
+      1_Stage_BaseTest_84: -294172962
+      1_Stage_BaseTest_85: -1067576038
+      1_Stage_BaseTest_86: -873869100
+      1_Stage_BaseTest_87: 1429397443
+      1_Stage_BaseTest_88: -939235184
+      1_Stage_BaseTest_89: -591121613
+      1_Stage_BaseTest_9: 1976920687
+      1_Stage_BaseTest_90: 1126453650
+      1_Stage_BaseTest_91: 1469978276
+      1_Stage_BaseTest_92: -1416432197
+      1_Stage_BaseTest_93: 346931915
+      1_Stage_BaseTest_94: 709320247
+      1_Stage_BaseTest_95: -815683542
+      1_Stage_BaseTest_96: -352536143
+      1_Stage_BaseTest_97: 1845608887
+      1_Stage_BaseTest_98: -1947036202
+      1_Stage_BaseTest_99: -281387197
+>>>>>>> Develop
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

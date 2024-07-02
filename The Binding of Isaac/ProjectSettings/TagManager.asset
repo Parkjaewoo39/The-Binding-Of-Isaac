@@ -15,6 +15,11 @@ TagManager:
   - Key
   - Coin
   - Bomb
+<<<<<<< HEAD
+=======
+  - Item
+  - UseBomb
+>>>>>>> Develop
   layers:
   - Default
   - TransparentFX
@@ -26,6 +31,13 @@ TagManager:
   - Tear
   - Player
   - Mob
+<<<<<<< HEAD
+=======
+  - 
+  - 
+  - 
+  - 
+>>>>>>> Develop
   - 
   - 
   - 
@@ -43,11 +55,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Light
   m_SortingLayers:
   - name: Default
     uniqueID: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UseBomb : MonoBehaviour
 {
+<<<<<<< HEAD
     public static UseBomb instance;
     private Animator bombAni ;
     public GameObject obj;
@@ -20,17 +21,34 @@ public class UseBomb : MonoBehaviour
             instance = this;
         }
     }
+=======
+
+    private Animator bombAni;
+    
+    Rigidbody2D bombRigid;
+    BoxCollider2D bombBoxCollider;
+
+
+>>>>>>> Develop
     // Start is called before the first frame update
     void Start()
     {
         bombAni = gameObject.GetComponent<Animator>();
         bombRigid = gameObject.GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
         StartCoroutine("Exp");
+=======
+        bombBoxCollider = gameObject.GetComponent<BoxCollider2D>();
+
+        Exp();
+
+>>>>>>> Develop
     }
 
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
     
     }
 
@@ -72,4 +90,31 @@ public class UseBomb : MonoBehaviour
     }
     
     
+=======
+
+    }
+
+
+    public void Exp()
+    {
+
+        bombAni.SetBool("isExploresion", true);
+        StartCoroutine(Delay());
+        
+    }
+    IEnumerator Delay() 
+    {
+        yield return new WaitForSeconds(1.45f);
+        bombBoxCollider.size = new Vector2(1f, 1f);
+        bombBoxCollider.isTrigger = true;
+        yield return new WaitForSeconds(0.1f);
+        bombBoxCollider.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+
+        Destroy(gameObject);
+    }
+    
+
+
+>>>>>>> Develop
 }

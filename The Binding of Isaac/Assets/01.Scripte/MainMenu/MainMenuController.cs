@@ -21,6 +21,7 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 
         if (isAniPress)
         {
@@ -50,6 +51,52 @@ public class MainMenuController : MonoBehaviour
         {
             OptionClose();
         }
+=======
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isOption && isAniPress)
+            {
+                Application.Quit();
+
+            }
+        }
+        else
+        {
+            if (isAniPress)
+            {
+
+            }
+            else
+            {
+                PressAny();
+            }
+            if (isEscPress)
+            {
+                PressEsc();
+            }
+            else
+            {
+
+            }
+            if (isNewRun)
+            {
+                NewRunOpen();
+            }
+            else
+            {
+                NewRunClose();
+            }
+            if (isOption)
+            {
+                OptionOpen();
+            }
+            else
+            {
+                OptionClose();
+            }
+        }
+
+>>>>>>> Develop
     }
     void PressAny()
     {
@@ -81,10 +128,38 @@ public class MainMenuController : MonoBehaviour
     }
     void NewRunOpen()
     {
+<<<<<<< HEAD
+=======
+        if (isNewRunChange)
+        {
+            transform.GetChild(3).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(1920f, 0, 0), new Quaternion(0, 0, 0, 0));
+            transform.GetChild(3).gameObject.SetActive(true);
+            transform.GetChild(3).GetComponent<NewRun>().direction = Vector2.left;
+            transform.GetChild(3).GetComponent<NewRun>().speed = 4000f;
+            transform.GetChild(1).GetComponent<ChoiceMenu>().direction = Vector2.left;
+            transform.GetChild(1).GetComponent<ChoiceMenu>().speed = 4000f;
+            isNewRunChange = false;
+            StartCoroutine(ActiveReset(transform.GetChild(1)));
+        }
+>>>>>>> Develop
 
     }
     void NewRunClose()
     {
+<<<<<<< HEAD
+=======
+        if (isNewRunChange)
+        {
+            transform.GetChild(1).GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector3(-1920f, 0, 0), new Quaternion(0, 0, 0, 0));
+            transform.GetChild(1).gameObject.SetActive(true);
+            transform.GetChild(3).GetComponent<NewRun>().direction = Vector2.right;
+            transform.GetChild(3).GetComponent<NewRun>().speed = 4000f;
+            transform.GetChild(1).GetComponent<ChoiceMenu>().direction = Vector2.right;
+            transform.GetChild(1).GetComponent<ChoiceMenu>().speed = 4000f;
+            isNewRunChange = false;
+            StartCoroutine(ActiveReset(transform.GetChild(3)));
+        }
+>>>>>>> Develop
 
     }
     void OptionOpen()
