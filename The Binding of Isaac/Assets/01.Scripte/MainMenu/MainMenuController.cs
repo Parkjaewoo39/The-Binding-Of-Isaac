@@ -23,9 +23,13 @@ public class MainMenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            if (isOption && isAniPress)
+            {
+                Application.Quit();
+
+            }
         }
-        else 
+        else
         {
             if (isAniPress)
             {
@@ -60,7 +64,7 @@ public class MainMenuController : MonoBehaviour
                 OptionClose();
             }
         }
-       
+
     }
     void PressAny()
     {

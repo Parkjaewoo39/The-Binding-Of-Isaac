@@ -24,8 +24,8 @@ public class AtFly : MonoBehaviour, IEnemy
         
         pickUp = FindObjectOfType<PickUp>();
         gameObject.SetActive(true);
-        AtFlyAni = gameObject.GetComponentMust<Animator>();
-        AtFlyRigid = gameObject.GetComponentMust<Rigidbody2D>();
+        AtFlyAni = gameObject.GetComponent<Animator>();
+        AtFlyRigid = gameObject.GetComponent<Rigidbody2D>();
         target = FindObjectOfType<PlayerController>().transform;
         room = GetComponentInParent<Room>();
         StartCoroutine("mobMove");
@@ -78,6 +78,10 @@ public class AtFly : MonoBehaviour, IEnemy
             Hit(GameManager.Instance.IsaacDamage);
             //Debug.Log($"{noAtFlyHp}");
         }
+        if (other.tag == "UseBomb")
+        {
+            Hit(GameManager.Instance.IsaacBombDamage);
+        }
     }
     public void OnTriggerStay2D(Collider2D other)
     {
@@ -99,7 +103,7 @@ public class AtFly : MonoBehaviour, IEnemy
 
         }
         if (AtFlyHp <= 0)
-        {
+        {            
             Die();
         }
     }   //Hit()
@@ -108,8 +112,8 @@ public class AtFly : MonoBehaviour, IEnemy
     //!{Die()
     public void Die()
     {
-        
         AtFlyAni.SetBool("Die", true);
+
         Invoke("DestroyMob", 0.3f);
         PickUpDrop();
         if (room != null) 

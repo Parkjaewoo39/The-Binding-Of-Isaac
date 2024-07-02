@@ -169,7 +169,7 @@ public class GameManager : MonoBehaviour
         bombDamage = 100;
         necronomiconDamage = 40;
         coin = 0;
-        key = 0;
+        key = 1;
         bomb = 3;
     }
     

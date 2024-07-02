@@ -137,13 +137,14 @@ public class RoomManager : MonoBehaviour
 
     }
     //방생성 후 모든방의 문을 다시 콜해서 보스룸 황금방 Door 픽스
-    private void UpdateAllRoomsDoors()
+    public void UpdateAllRoomsDoors()
     {
         foreach (var roomObject in roomObjects)
         {
             Room roomScript = roomObject.GetComponent<Room>();
             Vector2Int roomIndex = roomScript.RoomIndex;
             OpenDoors(roomObject, roomIndex.x, roomIndex.y);
+
         }
     }
 
@@ -569,19 +570,6 @@ public class RoomManager : MonoBehaviour
     }
 
 
-    //public void ClearBossRoom(bool isbool)
-    //{
-
-    //    roomBoss.transform.GetChild(5).gameObject.SetActive(isbool);
-    //    roomBoss.transform.GetChild(6).gameObject.SetActive(isbool);
-    //    roomBoss.transform.GetChild(7).gameObject.SetActive(isbool);
-    //    Debug.Log("Child 5 활성화 상태: " + roomBoss.transform.GetChild(5).gameObject.activeSelf);
-    //    Debug.Log("Child 6 활성화 상태: " + roomBoss.transform.GetChild(6).gameObject.activeSelf);
-    //}
-    //public void ClearBossRoom(bool isbool)
-    //{
-    //    roomBoss.transform.GetChild(5).gameObject.SetActive(isbool);
-    //    roomBoss.transform.GetChild(6).gameObject.SetActive(isbool);
-    //}
+   
 
 }

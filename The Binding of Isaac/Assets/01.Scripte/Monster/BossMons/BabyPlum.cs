@@ -58,9 +58,9 @@ public class BabyPlum : MonoBehaviour, IEnemy
 
     private void Awake()
     {
-        babyPlumAni = gameObject.GetComponentMust<Animator>();
-        babyPlumRigid = gameObject.GetComponentMust<Rigidbody2D>();
-        boxCollider2D = gameObject.GetComponentMust<BoxCollider2D>();
+        babyPlumAni = gameObject.GetComponent<Animator>();
+        babyPlumRigid = gameObject.GetComponent<Rigidbody2D>();
+        boxCollider2D = gameObject.GetComponent<BoxCollider2D>();
         rend = gameObject.GetComponent<SpriteRenderer>();
         target = FindObjectOfType<PlayerController>().transform;
 

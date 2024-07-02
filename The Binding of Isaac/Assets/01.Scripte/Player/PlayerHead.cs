@@ -16,98 +16,102 @@ public class PlayerHead : MonoBehaviour
     void Update()
     {
 
+        HandleMovementInput();
+        HandleAttackInput();
 
+    }
+    void HandleMovementInput()
+    {
+        if (Input.GetKey(KeyCode.D))
+        {
+            IsaacImage.SetBool("Right", true);
+        }
+        else
+        {
+            IsaacImage.SetBool("Right", false);
+        }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            IsaacImage.SetBool("Left", true);
+        }
+        else
+        {
+            IsaacImage.SetBool("Left", false);
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            IsaacImage.SetBool("Up", true);
+        }
+        else
+        {
+            IsaacImage.SetBool("Up", false);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            IsaacImage.SetBool("Down", true);
+        }
+        else
+        {
+            IsaacImage.SetBool("Down", false);
+        }
+    }
+
+    void HandleAttackInput()
+    {
         if (Input.GetKey(KeyCode.RightArrow))
         {
             isAttackCheck = true;
             IsaacImage.SetBool("RightAt", true);
         }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
+        else
         {
             IsaacImage.SetBool("RightAt", false);
             isAttackCheck = false;
         }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             isAttackCheck = true;
             IsaacImage.SetBool("LeftAt", true);
         }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        else
         {
             IsaacImage.SetBool("LeftAt", false);
             isAttackCheck = false;
         }
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             isAttackCheck = true;
             IsaacImage.SetBool("UpAt", true);
         }
-        else if (Input.GetKeyUp(KeyCode.UpArrow))
+        else
         {
             IsaacImage.SetBool("UpAt", false);
             isAttackCheck = false;
         }
+
         if (Input.GetKey(KeyCode.DownArrow))
         {
             isAttackCheck = true;
             IsaacImage.SetBool("DownAt", true);
         }
-        else if (Input.GetKeyUp(KeyCode.DownArrow))
+        else
         {
             IsaacImage.SetBool("DownAt", false);
             isAttackCheck = false;
         }
-        
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            IsaacImage.SetBool("Right", true);
-        }
-        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            IsaacImage.SetBool("Right", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            IsaacImage.SetBool("Left", true);
-        }
-        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            IsaacImage.SetBool("Left", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            IsaacImage.SetBool("Up", true);
-        }
-        else if (Input.GetKeyUp(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            IsaacImage.SetBool("Up", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            IsaacImage.SetBool("Down", true);
-        }
-        else if (Input.GetKeyUp(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            IsaacImage.SetBool("Down", false);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        // 트리거 충돌 시 플립 상태를 로그로 출력
+        Debug.Log("Trigger entered with: " + other.gameObject.name);
+        Debug.Log("Current flip state: " + GetComponent<SpriteRenderer>().flipX);
     }
 }
+
 
 

@@ -49,6 +49,7 @@ public class ChoiceMenu : MonoBehaviour
             }
 
         }
+        else { }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

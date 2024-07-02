@@ -4514,6 +4514,7 @@ MonoBehaviour:
   mobCount: 0
   onlyOneCheck: 0
   isbool: 0
+  isKeyGoldRoom: 0
 --- !u!1 &5400916980927158586
 GameObject:
   m_ObjectHideFlags: 0

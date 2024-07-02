@@ -65,7 +65,8 @@ public class PlayerMove : MonoBehaviour
         {
             if(!roomManager.isRoomMoveCheck)
             {
-                StartCoroutine(roomManager.DownDoorTouch());           
+                StartCoroutine(roomManager.DownDoorTouch());
+               
             }
         }
     }    

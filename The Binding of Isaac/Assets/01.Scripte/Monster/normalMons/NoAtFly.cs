@@ -24,8 +24,8 @@ public class NoAtFly : MonoBehaviour, IEnemy
     {
         pickUp = FindObjectOfType<PickUp>();
         gameObject.SetActive(true);
-        noAtFlyAni = gameObject.GetComponentMust<Animator>();
-        noAtFlyRigid = gameObject.GetComponentMust<Rigidbody2D>();
+        noAtFlyAni = gameObject.GetComponent<Animator>();
+        noAtFlyRigid = gameObject.GetComponent<Rigidbody2D>();
         target = FindObjectOfType<PlayerController>().transform;
         room = GetComponentInParent<Room>();
         StartCoroutine("mobMove");

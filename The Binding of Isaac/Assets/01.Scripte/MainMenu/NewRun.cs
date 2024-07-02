@@ -28,16 +28,7 @@ public class NewRun : MonoBehaviour
             if (!keyDelay)
             {
                 keyDelay = true;
-                if (PlayCheck[0].interactable)
-                {
-                    PlayCheck[0].interactable = false;
-                    PlayCheck[1].interactable = true;
-                }
-                else
-                {
-                    PlayCheck[0].interactable = true;
-                    PlayCheck[1].interactable = false;
-                }
+                
                 StartCoroutine(Delaykey());
             }
 
@@ -52,15 +43,14 @@ public class NewRun : MonoBehaviour
 
         {
             transform.parent.GetComponent<MainMenuController>().isEscPress = true;
-            //transform.
-            //.parent.GetComponent<TitleMoving>().
+
         }
     }
     IEnumerator Delaykey()
     {
         yield return new WaitForSecondsRealtime(0.4f);
         keyDelay = false;
-        Debug.Log(keyDelay);
+        
     }
 
     IEnumerator ActiveReset(Transform tran)
@@ -69,5 +59,5 @@ public class NewRun : MonoBehaviour
         tran.gameObject.SetActive(false);
     }
 
-    
+
 }

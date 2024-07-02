@@ -38,6 +38,7 @@ public class Room : MonoBehaviour
     public int mobCount;
     public int onlyOneCheck;
     public bool isbool = false;
+    public bool isKeyGoldRoom = false;
     private void Awake()
     {
 
@@ -141,29 +142,37 @@ public class Room : MonoBehaviour
     {
         if (adjacentRoomName != null)
         {
+            int index = DoorDirectionIndex(direction);
 
             if (adjacentRoomName == "BossRoom" || gameObject.name == "BossRoom")
             {
-                int index = DoorDirectionIndex(direction);
                 bossDoorOpen[index].SetActive(true);
                 bossDoorClose[index].SetActive(false);
                 basicDoorOpen[index].SetActive(false);
-
-
             }
-            else if (adjacentRoomName == "GoldRoom" || gameObject.name == "GoldRoom")
+            else if (adjacentRoomName == "GoldRoom")
             {
-                int index = DoorDirectionIndex(direction);
+                if (isKeyGoldRoom)
+                {
+                    goldDoorOpen[index].SetActive(true);
+                    goldDoorClose[index].SetActive(false);
+                    basicDoorOpen[index].SetActive(false);
+                }
+                else
+                {
+                    goldDoorOpen[index].SetActive(false);
+                    goldDoorClose[index].SetActive(true);
+                    basicDoorOpen[index].SetActive(false);
+                }
+            }
+            else if (gameObject.name == "GoldRoom") 
+            {
                 goldDoorOpen[index].SetActive(true);
-                basicDoorClose[index].SetActive(false);
-                basicDoorOpen[index].SetActive(false);
-
             }
             else
             {
-                int index = DoorDirectionIndex(direction);
                 basicDoorOpen[index].SetActive(true);
-                bossDoorOpen[index].SetActive(false);
+                basicDoorClose[index].SetActive(false);
             }
 
         }
@@ -190,11 +199,19 @@ public class Room : MonoBehaviour
             }
             else if (adjacentRoomName == "GoldRoom" || gameObject.name == "GoldRoom")
             {
+                if (isKeyGoldRoom)
+                {
+                    goldDoorOpen[index].SetActive(true);
+                    goldDoorClose[index].SetActive(false);
+                    basicDoorOpen[index].SetActive(false);
+                }
+                else
+                {
 
-                goldDoorClose[index].SetActive(true);
-                goldDoorOpen[index].SetActive(false);
-
-
+                    goldDoorOpen[index].SetActive(false);
+                    goldDoorClose[index].SetActive(true);
+                    basicDoorOpen[index].SetActive(false);
+                }
             }
 
             else

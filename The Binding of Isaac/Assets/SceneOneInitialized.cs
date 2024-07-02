@@ -17,7 +17,7 @@ public class SceneOneInitialized : MonoBehaviour
     // 인트로 사운드 초기화 함수
     private static void InitializeIntroSound()
     {
-        IntroSoundController introSoundController = FindObjectOfType<IntroSoundController>();
+        IntroController introSoundController = FindObjectOfType<IntroController>();
         if (introSoundController != null)
         {
             introSoundController.Reset(); 

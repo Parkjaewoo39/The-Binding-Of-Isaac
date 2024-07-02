@@ -4544,15 +4544,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4619034929660941024, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.28
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4619034929660941024, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.3
+      value: 0.13
       objectReference: {fileID: 0}
+    - target: {fileID: 4619034929660941029, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+      propertyPath: isaacAni
+      value: 
+      objectReference: {fileID: 8667814693094379326}
     - target: {fileID: 4619034929660941039, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
       propertyPath: m_Name
       value: Isaac
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456311862207624236, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4c5b71a3bae4a40459011923eed4663b, type: 2}
+    - target: {fileID: 5456311862207624236, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456311862207624236, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036038531147664875, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+      propertyPath: m_LinearDrag
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6036038531147664875, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
       propertyPath: m_Constraints
@@ -4792,3 +4812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607dec415a1dfb64697f27eab9c1522b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8667814693094379326 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5456311862207624236, guid: c0cc4fc693466164f9653fba8079ef74, type: 3}
+  m_PrefabInstance: {fileID: 4057840303330205144}
+  m_PrefabAsset: {fileID: 0}
